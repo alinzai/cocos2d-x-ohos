@@ -1,0 +1,34 @@
+{
+    "name": "@ohos/libxml2",
+    "description": "Libxml2 is the XML C parser and toolkit developed for the Gnome project (but usable outside of the Gnome platform), it is free software available under the MIT License",
+    "version": "3.1",
+    "license": "MIT",
+    "publishAs": "code-segment",
+    "segment": {
+        "destPath": "third_party/libxml2"
+    },
+    "dirs": {},
+    "scripts": {},
+    "licensePath": "Copyright",
+    "readmePath": {
+        "en": "README.md"
+    },
+    "component": {
+        "name": "libxml2",
+        "subsystem": "thirdparty",
+        "syscap": [],
+        "features": [],
+        "adapted_system_type": [],
+        "rom": "",
+        "ram": "",
+        "deps": {
+            "components": [],
+            "third_party": []
+        },
+        "build": {
+            "sub_component": [],
+            "inner_kits": [],
+            "test": []
+        }
+    }
+}

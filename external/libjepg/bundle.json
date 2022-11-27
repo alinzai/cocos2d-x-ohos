@@ -1,0 +1,34 @@
+{
+    "name": "@ohos/libjpeg-turbo",
+    "description": "IJG is an informal group that writes and distributes a widely used free library for JPEG image compression",
+    "version": "3.1",
+    "license": "JPEG License",
+    "publishAs": "code-segment",
+    "segment": {
+        "destPath": "third_party/libjpeg-turbo"
+    },
+    "dirs": {},
+    "scripts": {},
+    "licensePath": "LICENSE.md",
+    "readmePath": {
+        "en": ""
+    },
+    "component": {
+        "name": "thirdparty_libjpeg-turbo",
+        "subsystem": "",
+        "syscap": [],
+        "features": [],
+        "adapted_system_type": [],
+        "rom": "",
+        "ram": "",
+        "deps": {
+            "components": [],
+            "third_party": []
+        },
+        "build": {
+            "sub_component": [],
+            "inner_kits": [],
+            "test": []
+        }
+    }
+}

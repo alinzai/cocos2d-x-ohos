@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 2022 Huawei Device Co., Ltd.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+
+    This is the configuration file template for OpenHarmony OSS Audit Tool, please copy it to your project root dir and modify it refer to OpenHarmony/tools_oat/README.
+
+-->
+
+<configuration>
+    <oatconfig>
+        <licensefile>LICENSE.md</licensefile>
+        <policylist>
+            <policy name="projectPolicy" desc="">
+                <policyitem type="license" name="*" path=".*" rule="may" group="defaultGroup" filefilter="defaultPolicyFilter" desc=""/>
+                <policyitem type="copyright" name="*" path=".*" rule="may" group="defaultGroup" filefilter="copyrightPolicyFilter" desc=""/>
+                <policyitem type="compatibility" name="Libjpeg License (JPEG License)" path="*.*" desc="libjpeg license"/>
+                <policyitem type="compatibility" name="BSD-3-Clause" path="*.*" desc="BSD-3-Clause"/>
+                <policyitem type="compatibility" name="zlib-acknowledgement" path="*.*" desc="zlib"/>
+                <policyitem type="compatibility" name="Apache-2.0" path="*.*" desc="ninja build configs"/>
+            </policy>
+        </policylist>
+        <filefilterlist>
+            <filefilter name="defaultFilter" desc="Files not to check">
+                <filteritem type="filename" name="README.ijg" desc="license statement"/>
+                <filteritem type="filepath" name="release/*" desc="release notes and license statement"/>
+                <filteritem type="filepath" name="md5/*" desc="md5 tools for test"/>
+                <filteritem type="filepath" name="doc/*" desc="docs"/>
+                <filteritem type="filepath" name="testimages/*" desc="tests"/>
+                <filteritem type="filepath" name="ci/*" desc="ci config"/>
+                <filteritem type="filepath" name="java/doc/*" desc="docs"/>
+                <filteritem type="filename" name="*.json" desc=""/>
+                <filteritem type="filepath" name="dir name underproject/.*.uvwxyz" desc="Describe the reason for filtering scan results"/>
+                <filteritem type="filepath" name="projectroot/[a-zA-Z0-9]{20,}.sh" desc="Temp files"/>
+            </filefilter>
+            <filefilter name="defaultPolicyFilter" desc="Filters for compatibility，license header policies">
+            </filefilter>
+            <filefilter name="copyrightPolicyFilter" desc="Filters for copyright header policies">
+            </filefilter>
+            <filefilter name="licenseFileNamePolicyFilter" desc="Filters for LICENSE file policies">
+            </filefilter>
+            <filefilter name="readmeFileNamePolicyFilter" desc="Filters for README file policies">
+            </filefilter>
+            <filefilter name="readmeOpenSourcefileNamePolicyFilter" desc="Filters for README.OpenSource file policies">
+            </filefilter>
+            <filefilter name="binaryFileTypePolicyFilter" desc="Filters for binary file policies">
+            </filefilter>
+
+        </filefilterlist>
+        <licensematcherlist>
+            <licensematcher name="Libjpeg License (JPEG License)" desc="libjpeg license header.">
+                <licensetext name="part of the Independent JPEG Group's software" desc=""/>
+                <licensetext name="x86 SIMD extension for IJG JPEG library" desc=""/>
+                <licensetext name="For conditions of distribution and use, see the accompanying README.ijg" desc=""/>
+            </licensematcher>Based on the x86 SIMD extension for IJG JPEG library
+        </licensematcherlist>
+    </oatconfig>
+</configuration>

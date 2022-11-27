@@ -1,0 +1,11 @@
+[
+{
+"Name": " libjpeg-turbo ",
+"License": " JPEG License ",
+"License File": " LICENSE.md ",
+"Version Number": " 2.0.5 ",
+"Owner": " lizhiqi1@huawei.com ",
+"Upstream URL": " https://libjpeg-turbo.org/ ",
+"Description": " libjpeg-turbo is a JPEG image codec that uses SIMD instructions. "
+}
+]

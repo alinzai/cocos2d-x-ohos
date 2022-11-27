@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 2021 Huawei Device Co., Ltd.
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<configuration>
+    <oatconfig>
+        <policylist>
+            <policy name="libxml2">
+                <policyitem type="compatibility" name="ISC-style license" path=".*" desc="与Apache兼容" />
+            </policy>
+        </policylist>
+        <licensefile>Copyright</licensefile>
+	<filefilterlist>
+            <filefilter name="defaultFilter" desc="Files not to check">
+                <filteritem type="filepath" name="test/schemas/changelog093_1.xsd" desc="test file"/>
+		<filteritem type="filepath" name="test/valid/dtds/NewsMLv1.2.dtd" desc="test file"/>
+                <filteritem type="filepath" name="doc/libxml-doc.el" desc="帮助文档"/>
+            </filefilter>
+            <filefilter name="binaryFileTypePolicyFilter" desc="Filters for binary file policies">
+                <filteritem type="filepath" name=".*" desc="For license see the license of this project."/>
+            </filefilter>
+            <filefilter name="defaultPolicyFilter" desc="Filters for license header policies">
+                <filteritem type="filepath" name="xmlwriter.c" desc="For license and disclaimer see the license and disclaimer of libxml2."/>
+                <filteritem type="filename" name="REC-xml-19980210.xml" desc="测试xml文件"/>
+                <filteritem type="filename" name="readme.vms" desc="问题记录文件"/>
+                <filteritem type="filename" name="autogen.sh" desc="三方编译脚本"/>
+            </filefilter>
+        </filefilterlist>
+        <licensematcherlist>
+            <licensematcher name="ISC-style license" des="">
+                <licensetext name="
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+                " des=""/>
+            </licensematcher>
+        </licensematcherlist>
+    </oatconfig>
+</configuration>
