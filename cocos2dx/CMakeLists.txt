@@ -132,7 +132,7 @@ set(COCOS2DX_SRC
     support/CCProfiling.cpp
     support/CCPointExtension.cpp
     support/TransformUtils.cpp
-    support/user_default/CCUserDefaultAndroid.cpp
+    support/user_default/CCUserDefault.cpp
     support/base64.cpp
     support/ccUtils.cpp
     support/CCVertex.cpp

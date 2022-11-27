@@ -44,6 +44,10 @@ THE SOFTWARE.
 #include "platform/android/CCFileUtilsAndroid.h"
 #endif
 
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_OHOS)
+#include "platform/ohos/CCFileUtilsOhos.h"
+#endif
+
 #include <string>
 #include <ctype.h>
 

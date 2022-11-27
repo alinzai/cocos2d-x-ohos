@@ -298,7 +298,8 @@ bool CCLabelTTF::updateTexture()
     if (!tex)
         return false;
     
-    #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID) || (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
+    #if ((CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID) || (CC_TARGET_PLATFORM == CC_PLATFORM_IOS) \
+        || (CC_TARGET_PLATFORM == CC_PLATFORM_OHOS))
     
         ccFontDefinition texDef = _prepareTextDefinition(true);
         tex->initWithString( m_string.c_str(), &texDef );
@@ -330,7 +331,8 @@ bool CCLabelTTF::updateTexture()
 
 void CCLabelTTF::enableShadow(const CCSize &shadowOffset, float shadowOpacity, float shadowBlur, bool updateTexture)
 {
-    #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID) || (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
+    #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID) || (CC_TARGET_PLATFORM == CC_PLATFORM_IOS) \
+        || (CC_TARGET_PLATFORM == CC_PLATFORM_OHOS)
     
         bool valueChanged = false;
         
@@ -374,8 +376,9 @@ void CCLabelTTF::enableShadow(const CCSize &shadowOffset, float shadowOpacity, f
 
 void CCLabelTTF::disableShadow(bool updateTexture)
 {
-    #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID) || (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
-    
+    #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID) || (CC_TARGET_PLATFORM == CC_PLATFORM_IOS) \
+        || (CC_TARGET_PLATFORM == CC_PLATFORM_OHOS)
+
         if (m_shadowEnabled)
         {
             m_shadowEnabled = false;
@@ -392,8 +395,9 @@ void CCLabelTTF::disableShadow(bool updateTexture)
 
 void CCLabelTTF::enableStroke(const ccColor3B &strokeColor, float strokeSize, bool updateTexture)
 {
-    #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID) || (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
-    
+    #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID) || (CC_TARGET_PLATFORM == CC_PLATFORM_IOS) \
+        || (CC_TARGET_PLATFORM == CC_PLATFORM_OHOS)
+
         bool valueChanged = false;
         
         if(m_strokeEnabled == false)
@@ -427,7 +431,8 @@ void CCLabelTTF::enableStroke(const ccColor3B &strokeColor, float strokeSize, bo
 
 void CCLabelTTF::disableStroke(bool updateTexture)
 {
-    #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID) || (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
+    #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID) || (CC_TARGET_PLATFORM == CC_PLATFORM_IOS) \
+        || (CC_TARGET_PLATFORM == CC_PLATFORM_OHOS)
     
         if (m_strokeEnabled)
         {
@@ -445,7 +450,8 @@ void CCLabelTTF::disableStroke(bool updateTexture)
 
 void CCLabelTTF::setFontFillColor(const ccColor3B &tintColor, bool updateTexture)
 {
-    #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID) || (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
+    #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID) || (CC_TARGET_PLATFORM == CC_PLATFORM_IOS) \
+        || (CC_TARGET_PLATFORM == CC_PLATFORM_OHOS)
         if (m_textFillColor.r != tintColor.r || m_textFillColor.g != tintColor.g || m_textFillColor.b != tintColor.b)
         {
             m_textFillColor = tintColor;

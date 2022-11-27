@@ -165,7 +165,7 @@ void UICCTextField::insertText(const char * text, int len)
                 input_text = input_text.substr(0, end);
                 len  = end;
             }
-#elif (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
+#elif (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID) || (CC_TARGET_PLATFORM == CC_PLATFORM_OHOS)
             int input_count = _calcCharCount(text);
             int total = text_count + input_count;
 
