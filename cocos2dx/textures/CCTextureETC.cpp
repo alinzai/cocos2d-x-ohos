@@ -27,7 +27,7 @@
 #include "platform/CCFileUtils.h"
 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
-#include "platform/android/jni/JniHelper.h"
+// #include "platform/android/jni/JniHelper.h"
 #endif
 
 
@@ -71,29 +71,30 @@ unsigned int CCTextureETC::getHeight() const
 
 // Call back function for java
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
-#define  LOG_TAG    "CCTextureETC.cpp"
-#define  LOGD(...)  __android_log_print(ANDROID_LOG_DEBUG,LOG_TAG,__VA_ARGS__)
-
+// #define  LOG_TAG    "CCTextureETC.cpp"
+#define  LOGD OHOS_LOGD
+/*
 static unsigned int sWidth = 0;
 static unsigned int sHeight = 0;
 static unsigned char *sData = NULL;
 static unsigned int sLength = 0;
-
+*/
 extern "C"
 {
-    JNIEXPORT void JNICALL Java_org_cocos2dx_lib_Cocos2dxETCLoader_nativeSetTextureInfo(JNIEnv* env, jobject thiz, jint width, jint height, jbyteArray data, jint dataLength)
-    {
-        sWidth = (unsigned int)width;
-        sHeight = (unsigned int)height;
-        sLength = dataLength;
-        sData = new unsigned char[sLength];
-        env->GetByteArrayRegion(data, 0, sLength, (jbyte*)sData);
-    }
+//    JNIEXPORT void JNICALL Java_org_cocos2dx_lib_Cocos2dxETCLoader_nativeSetTextureInfo(JNIEnv* env, jobject thiz, jint width, jint height, jbyteArray data, jint dataLength)
+//    {
+//        sWidth = (unsigned int)width;
+//        sHeight = (unsigned int)height;
+//        sLength = dataLength;
+//        sData = new unsigned char[sLength];
+//        env->GetByteArrayRegion(data, 0, sLength, (jbyte*)sData);
+//    }
 }
 #endif
 
 bool CCTextureETC::loadTexture(const char* file)
 {
+/*
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
     JniMethodInfo t;
     if (JniHelper::getStaticMethodInfo(t, "org/cocos2dx/lib/Cocos2dxETCLoader", "loadTexture", "(Ljava/lang/String;)Z"))
@@ -142,6 +143,8 @@ bool CCTextureETC::loadTexture(const char* file)
 #else
     return false;
 #endif
+*/
+    return false;
 }
 
 NS_CC_END

@@ -150,6 +150,14 @@ THE SOFTWARE.
     #include "platform/android/CCStdC.h"
 #endif // CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID
 
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_OHOS)
+    #include "platform/ohos/CCAccelerometer.h"
+    #include "platform/ohos/CCApplication.h"
+    #include "platform/ohos/CCEGLView.h"
+    #include "platform/ohos/CCGL.h"
+    #include "platform/ohos/CCStdC.h"
+#endif // (CC_TARGET_PLATFORM == CC_PLATFORM_OHOS)
+
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_BLACKBERRY)
     #include "platform/blackberry/CCAccelerometer.h"
     #include "platform/blackberry/CCApplication.h"

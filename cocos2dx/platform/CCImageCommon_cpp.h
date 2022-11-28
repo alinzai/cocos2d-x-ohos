@@ -23,6 +23,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 ****************************************************************************/
 
+#include "CCFileUtilsOhos.h"
 #ifndef __CC_PLATFORM_IMAGE_CPP__
 #error "CCFileUtilsCommon_cpp.h can only be included for CCFileUtils.cpp in platform/win32(android,...)"
 #endif /* __CC_PLATFORM_IMAGE_CPP__ */
@@ -41,6 +42,10 @@ THE SOFTWARE.
 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 #include "platform/android/CCFileUtilsAndroid.h"
+#endif
+
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_OHOS)
+#include "platform/ohos/CCFileUtilsOhos.h"
 #endif
 
 #include <string>
@@ -151,8 +156,8 @@ bool CCImage::initWithImageFileThreadSafe(const char *fullpath, EImageFormat ima
 {
     bool bRet = false;
     unsigned long nSize = 0;
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
-    CCFileUtilsAndroid *fileUitls = (CCFileUtilsAndroid*)CCFileUtils::sharedFileUtils();
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_OHOS)
+    CCFileUtilsOhos *fileUitls = (CCFileUtilsOhos*)CCFileUtils::sharedFileUtils();
     unsigned char *pBuffer = fileUitls->getFileDataForAsync(fullpath, "rb", &nSize);
 #else
     unsigned char *pBuffer = CCFileUtils::sharedFileUtils()->getFileData(fullpath, "rb", &nSize);

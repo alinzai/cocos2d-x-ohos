@@ -1,0 +1,12 @@
+[
+    {
+        "Name": "libxml2",
+        "License": "MIT License",
+        "License File": "Copyright",
+        "Version Number": "2.9.13",
+        "Owner": "jameslee@huawei.com",
+        "Upstream URL": "https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.9.13/libxml2-v2.9.13.tar.gz",
+        "Description": "Libxml2 is the XML C parser and toolkit developed for the Gnome project (but usable outside of the Gnome platform), it is free software available under the MIT License"
+    }
+]
+

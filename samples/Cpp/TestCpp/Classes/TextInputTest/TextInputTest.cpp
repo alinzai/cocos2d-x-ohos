@@ -277,7 +277,7 @@ void TextFieldTTFDefaultTest::onEnter()
         FONT_SIZE);
     addChild(pTextField);
 
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)    
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID) || (CC_TARGET_PLATFORM == CC_PLATFORM_OHOS)
     // on android, CCTextFieldTTF cannot auto adjust its position when soft-keyboard pop up
     // so we had to set a higher position to make it visable
     pTextField->setPosition(ccp(s.width / 2, s.height/2 + 50));
@@ -339,7 +339,7 @@ void TextFieldTTFActionTest::onEnter()
 
     m_pTextField->setDelegate(this);
     
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)    
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID) || (CC_TARGET_PLATFORM == CC_PLATFORM_OHOS)
     // on android, CCTextFieldTTF cannot auto adjust its position when soft-keyboard pop up
     // so we had to set a higher position
     m_pTextField->setPosition(ccp(s.width / 2, s.height/2 + 50));

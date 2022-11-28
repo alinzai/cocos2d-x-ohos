@@ -681,7 +681,7 @@ void TexturePVRRGBA4444GZ::onEnter()
     TextureDemo::onEnter();
     CCSize s = CCDirector::sharedDirector()->getWinSize();
 
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID) || (CC_TARGET_PLATFORM == CC_PLATFORM_OHOS)
     // android can not pack .gz file into apk file
     CCSprite *img = CCSprite::create("Images/test_image_rgba4444.pvr");
 #else
@@ -1960,7 +1960,7 @@ void TextureMemoryAlloc::updateImage(cocos2d::CCObject *sender)
 		case 0:
 			file = "Images/test_1021x1024.png";
 			break;
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID) || (CC_TARGET_PLATFORM == CC_PLATFORM_OHOS)
             // android can not pack .gz file into apk file
         case 1:
             file = "Images/test_1021x1024_rgba8888.pvr";
@@ -2074,7 +2074,7 @@ public:
 
 TextureETC1::TextureETC1()
 {
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID) || (CC_TARGET_PLATFORM == CC_PLATFORM_OHOS)
     CCSprite *sprite = CCSprite::create("Images/ETC1.pkm");
     
     CCSize size = CCDirector::sharedDirector()->getWinSize();
