@@ -21,7 +21,7 @@
  */
 static napi_value Init(napi_env env, napi_value exports)
 {
-    LOGE("Init");
+    LOGD("Napi Init");
     napi_property_descriptor desc[] ={
         DECLARE_NAPI_FUNCTION("getContext", NapiManager::GetContext),
     };
@@ -29,7 +29,7 @@ static napi_value Init(napi_env env, napi_value exports)
 
     bool ret = NapiManager::GetInstance()->Export(env, exports);
     if (!ret) {
-        LOGE("Init failed");
+        LOGE("Napi Init failed");
     }
     return exports;
 }

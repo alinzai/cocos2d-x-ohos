@@ -1,6 +1,8 @@
 // @ts-nocheck
 import nativerender from "libnativerender.so";
 import { ContextType } from "../common/Constants"
+import { WorkerManager } from "../WorkerManager"
+import window from '@ohos.window'
 
 const nativePageLifecycle = nativerender.getContext(ContextType.JSPAGE_LIFECYCLE);
 const rawFileUtils = nativerender.getContext(ContextType.RAW_FILE_UTILS);
@@ -9,6 +11,7 @@ const rawFileUtils = nativerender.getContext(ContextType.RAW_FILE_UTILS);
 @Component
 struct Index {
   private context = null;
+  cocosWorker = WorkerManager.getInstance().getWorker();
 //  aboutToAppear() {
 //    console.log('[LIFECYCLE-Index] aboutToAppear');
 //    nativePageLifecycle.aboutToAppear();
@@ -17,6 +20,25 @@ struct Index {
 //    console.log('[LIFECYCLE-Index] aboutToDisappear');
 //    nativePageLifecycle.aboutToDisappear();
 //  }
+
+
+  async enterImmersion() {
+        let w = await window.getTopWindow(getContext(this))
+        await w.setLayoutFullScreen(true)
+    //    await w.setSystemBarEnable(["status", "navigation"])
+    //    await w.setSystemBarProperties(
+    //      {
+    //        navigationBarColor: "#00000000",
+    //        satusBarColor: "#00000000",
+    //        navigationBarContentColor: "#00FF00",
+    //        statusBarContentColor: "#00FF00"
+    //      }
+    //    )
+  }
+
+  aboutToAppear() {
+        this.enterImmersion()
+  }
 
   onPageShow() {
     console.log('[LIFECYCLE-Page] onPageShow');
@@ -32,11 +54,14 @@ struct Index {
     console.log('[LIFECYCLE-Page] onPageHide');
     nativePageLifecycle.onPageHide();
   }
+  
   build() {
     Flex({ direction: FlexDirection.Column, alignItems: ItemAlign.Center, justifyContent: FlexAlign.Center }) {
-      XComponent({ id: 'xcomponentId', type: 'texture', libraryname: 'nativerender'})
+      XComponent({ id: 'xcomponentId', type: 'surface', libraryname: 'nativerender'})
         .onLoad((context) => {
+          console.log('[cocos] XComponent.onLoad Callback');
           this.context = context;
+          this.cocosWorker.postMessage({type: "onXCLoad", data: "XComponent"});
         })
         .onDestroy(() => {
         })

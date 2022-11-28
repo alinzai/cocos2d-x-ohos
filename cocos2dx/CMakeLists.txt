@@ -112,6 +112,7 @@ set(COCOS2DX_SRC
     platform/ohos/napi/render/egl_core.cpp
     platform/ohos/napi/render/plugin_render.cpp
     platform/ohos/napi/plugin_manager.cpp
+    platform/ohos/napi/WorkerMessageQueue.cpp
     # platform/ohos/napi/napi_init.cpp
     platform/ohos/napi/modules/RawFileUtils.cpp
 
