@@ -18,22 +18,32 @@
 
 #include <string>
 #include <unordered_map>
+#include <uv.h>
 
 #include <ace/xcomponent/native_interface_xcomponent.h>
 #include <napi/native_api.h>
 
 #include "egl_core.h"
+#include "../WorkerMessageQueue.h"
 
 class PluginRender {
 public:
-    PluginRender(std::string& id);
-    static PluginRender* GetInstance(std::string& id);
+    PluginRender();
+    static PluginRender* GetInstance();
     static OH_NativeXComponent_Callback* GetNXComponentCallback();
 
-    static void SetCurInstanceID(std::string id);
-    static std::string* GetCurInstanceID();
+    static void onMessageCallback(const uv_async_t* req);
+    static void timerCb(uv_timer_t* handle);
 
     void SetNativeXComponent(OH_NativeXComponent* component);
+
+    void workerInit(napi_env env, uv_loop_t* loop);
+
+    void sendMsgToWorker(const MessageType& type, OH_NativeXComponent* component, void* window); 
+    void enqueue(const WorkerMessageData& data);
+    bool dequeue(WorkerMessageData* data);
+    void triggerMessageSignal();
+    void run();
 
 public:
     // NAPI interface
@@ -54,21 +64,28 @@ public:
 
     void DispatchTouchEvent(OH_NativeXComponent* component, void* window);
 
-public:
-    static std::unordered_map<std::string, PluginRender*> instance_;
-    static OH_NativeXComponent_Callback callback_;
-    static std::string curId_;
+    void OnCreateNative(napi_env env, uv_loop_t* loop);
+    void OnShowNative();
+    void OnHideNative();
+    void OnDestroyNative();
 
-    OH_NativeXComponent* component_;
+public:
+    static PluginRender* instance_;
+    static OH_NativeXComponent_Callback callback_;
+    static std::queue<OH_NativeXComponent_TouchEvent*> touchEventQueue_;
+
+    OH_NativeXComponent* component_{nullptr};
+    uv_timer_t timerHandle_;
+    uv_loop_t* workerLoop_{nullptr};
+    uv_async_t messageSignal_{};
+    WorkerMessageQueue messageQueue_;
     EGLCore* eglCore_;
 
-    std::string id_;
     uint64_t width_;
     uint64_t height_;
 
     double x_;
     double y_;
-    OH_NativeXComponent_TouchEvent touchEvent_;
 };
 
 #endif // _PLUGIN_RENDER_H_

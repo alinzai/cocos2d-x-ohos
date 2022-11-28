@@ -24,6 +24,7 @@
 #include <uv.h>
 
 #include "native_common.h"
+#include "WorkerMessageQueue.h"
 #include "plugin_render.h"
 
 class NapiManager {
@@ -42,11 +43,6 @@ public:
     static napi_value NapiOnShow(napi_env env, napi_callback_info info);
     static napi_value NapiOnHide(napi_env env, napi_callback_info info);
     static napi_value NapiOnDestroy(napi_env env, napi_callback_info info);
-
-    void OnCreateNative(napi_env env, uv_loop_t* loop);
-    void OnShowNative();
-    void OnHideNative();
-    void OnDestroyNative();
     /*********************************************************************/
 
     /******************************声明式范式******************************/
@@ -57,9 +53,12 @@ public:
     void OnPageHideNative();
     /*************************************************************************/
 
-    OH_NativeXComponent* GetNativeXComponent(std::string& id);
-    void SetNativeXComponent(std::string& id, OH_NativeXComponent* nativeXComponent);
-    PluginRender* GetRender(std::string& id);
+    // Worker Func
+    static napi_value napiWorkerInit(napi_env env, napi_callback_info info);
+    static napi_value napiNativeEngineStart(napi_env env, napi_callback_info info);
+
+    OH_NativeXComponent* GetNativeXComponent();
+    void SetNativeXComponent(OH_NativeXComponent* nativeXComponent);
 
 public:
     // Napi export
@@ -67,11 +66,8 @@ public:
 private:
     static void MainOnMessage(const uv_async_t* req);
     static NapiManager manager_;
-    static uv_timer_t* renderTimer_;
 
-    std::string id_;
-    std::unordered_map<std::string, OH_NativeXComponent*> nativeXComponentMap_;
-    std::unordered_map<std::string, PluginRender*> pluginRenderMap_;
+    OH_NativeXComponent* nativeXComponent_ = nullptr;
 
 public:
     napi_env mainEnv_ = nullptr;

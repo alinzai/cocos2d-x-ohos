@@ -16,4 +16,10 @@ export enum ContextType {
     APP_LIFECYCLE = 0,
     JSPAGE_LIFECYCLE,
     RAW_FILE_UTILS,
+    WORKER_INIT,
+    NATIVE_RENDER_API,
+}
+
+export class Constants {
+    static readonly APP_KEY_WORKER_MANAGER = "app_key_worker_manager";
 }

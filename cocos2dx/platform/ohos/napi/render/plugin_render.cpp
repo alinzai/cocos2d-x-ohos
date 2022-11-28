@@ -30,80 +30,45 @@ using namespace cocos2d;
 extern "C" {
 #endif
 
-std::unordered_map<std::string, PluginRender*> PluginRender::instance_;
-
+PluginRender* PluginRender::instance_ = nullptr;
 OH_NativeXComponent_Callback PluginRender::callback_;
-
-std::string PluginRender::curId_;
+std::queue<OH_NativeXComponent_TouchEvent*> PluginRender::touchEventQueue_;
 
 void OnSurfaceCreatedCB(OH_NativeXComponent* component, void* window)
 {
     LOGD("OnSurfaceCreatedCB");
-    int32_t ret;
-    char idStr[OH_XCOMPONENT_ID_LEN_MAX + 1] = {};
-    uint64_t idSize = OH_XCOMPONENT_ID_LEN_MAX + 1;
-    ret = OH_NativeXComponent_GetXComponentId(component, idStr, &idSize);
-    if (ret != OH_NATIVEXCOMPONENT_RESULT_SUCCESS) {
-        return;
-    }
-
-    std::string id(idStr);
-    PluginRender::SetCurInstanceID(id);
-    auto render = PluginRender::GetInstance(id);
-    render->OnSurfaceCreated(component, window);
+    PluginRender::GetInstance()->sendMsgToWorker(MessageType::WM_XCOMPONENT_SURFACE_CREATED, component, window);
 }
 
 void OnSurfaceChangedCB(OH_NativeXComponent* component, void* window)
 {
-    int32_t ret;
-    char idStr[OH_XCOMPONENT_ID_LEN_MAX + 1] = {};
-    uint64_t idSize = OH_XCOMPONENT_ID_LEN_MAX + 1;
-    ret = OH_NativeXComponent_GetXComponentId(component, idStr, &idSize);
-    if (ret != OH_NATIVEXCOMPONENT_RESULT_SUCCESS) {
-        return;
-    }
-
-    std::string id(idStr);
-    PluginRender::SetCurInstanceID(id);
-    auto render = PluginRender::GetInstance(id);
-    render->OnSurfaceChanged(component, window);
+    LOGD("OnSurfaceChangedCB");
+    PluginRender::GetInstance()->sendMsgToWorker(MessageType::WM_XCOMPONENT_SURFACE_CHANGED, component, window);
 }
 
 void OnSurfaceDestroyedCB(OH_NativeXComponent* component, void* window)
 {
-    int32_t ret;
-    char idStr[OH_XCOMPONENT_ID_LEN_MAX + 1] = {};
-    uint64_t idSize = OH_XCOMPONENT_ID_LEN_MAX + 1;
-    ret = OH_NativeXComponent_GetXComponentId(component, idStr, &idSize);
-    if (ret != OH_NATIVEXCOMPONENT_RESULT_SUCCESS) {
-        return;
-    }
-
-    std::string id(idStr);
-    auto render = PluginRender::GetInstance(id);
-    render->OnSurfaceDestroyed(component, window);
+    LOGD("OnSurfaceDestroyedCB");
+    PluginRender::GetInstance()->sendMsgToWorker(MessageType::WM_XCOMPONENT_SURFACE_DESTROY, component, window);
 }
 
 void DispatchTouchEventCB(OH_NativeXComponent* component, void* window)
 {
     LOGD("DispatchTouchEventCB");
-    int32_t ret;
-    char idStr[OH_XCOMPONENT_ID_LEN_MAX + 1] = {};
-    uint64_t idSize = OH_XCOMPONENT_ID_LEN_MAX + 1;
-    ret = OH_NativeXComponent_GetXComponentId(component, idStr, &idSize);
-    if (ret != OH_NATIVEXCOMPONENT_RESULT_SUCCESS) {
+    OH_NativeXComponent_TouchEvent* touchEvent = new(std::nothrow) OH_NativeXComponent_TouchEvent();
+    if (!touchEvent) {
+        LOGE("DispatchTouchEventCB::touchEvent alloc failed");
         return;
     }
-
-    std::string id(idStr);
-    auto render = PluginRender::GetInstance(id);
-    render->DispatchTouchEvent(component, window);
-
+    int32_t ret = OH_NativeXComponent_GetTouchEvent(component, window, touchEvent);
+    if (ret == OH_NATIVEXCOMPONENT_RESULT_SUCCESS) {
+        PluginRender::touchEventQueue_.push(touchEvent);
+    }
+    PluginRender::GetInstance()->sendMsgToWorker(MessageType::WM_XCOMPONENT_TOUCH_EVENT, component, window);
 }
 
-PluginRender::PluginRender(std::string& id) : id_(id), component_(nullptr)
+PluginRender::PluginRender() : component_(nullptr)
 {
-    eglCore_ = new EGLCore(id);
     auto renderCallback = PluginRender::GetNXComponentCallback();
     renderCallback->OnSurfaceCreated = OnSurfaceCreatedCB;
     renderCallback->OnSurfaceChanged = OnSurfaceChangedCB;
@@ -111,15 +76,12 @@ PluginRender::PluginRender(std::string& id) : id_(id), component_(nullptr)
     renderCallback->DispatchTouchEvent = DispatchTouchEventCB;
 }
 
-PluginRender* PluginRender::GetInstance(std::string& id)
+PluginRender* PluginRender::GetInstance()
 {
-    if (instance_.find(id) == instance_.end()) {
-        PluginRender*  instance = new PluginRender(id);
-        instance_[id] = instance;
-        return instance;
-    } else {
-        return instance_[id];
+    if (instance_ == nullptr) {
+        instance_ = new PluginRender();
     }
+    return instance_;
 }
 
 OH_NativeXComponent_Callback* PluginRender::GetNXComponentCallback()
@@ -127,14 +89,57 @@ OH_NativeXComponent_Callback* PluginRender::GetNXComponentCallback()
     return &PluginRender::callback_;
 }
 
-std::string* PluginRender::GetCurInstanceID()
-{
-    return &PluginRender::curId_;
+// static
+void PluginRender::onMessageCallback(const uv_async_t* /* req */) {
+    // LOGD("PluginRender::onMessageCallback");
+    void* window = nullptr;
+    WorkerMessageData msgData;
+    PluginRender* render = PluginRender::GetInstance();
+
+    while (true) {
+        //loop until all msg dispatch
+        if (!render->dequeue(reinterpret_cast<WorkerMessageData*>(&msgData))) {
+            // Queue has no data
+            break;
+        }
+
+        if ((msgData.type >= MessageType::WM_XCOMPONENT_SURFACE_CREATED) && (msgData.type <= MessageType::WM_XCOMPONENT_SURFACE_DESTROY)) {
+            OH_NativeXComponent* nativexcomponet = reinterpret_cast<OH_NativeXComponent*>(msgData.data);
+            CC_ASSERT(nativexcomponet != nullptr);
+
+            if (msgData.type == MessageType::WM_XCOMPONENT_SURFACE_CREATED) {
+                render->OnSurfaceCreated(nativexcomponet, msgData.window);
+            } else if (msgData.type == MessageType::WM_XCOMPONENT_TOUCH_EVENT) {
+                render->DispatchTouchEvent(nativexcomponet, msgData.window);
+            } else if (msgData.type == MessageType::WM_XCOMPONENT_SURFACE_CHANGED) {
+                render->OnSurfaceChanged(nativexcomponet, msgData.window);
+            } else if (msgData.type == MessageType::WM_XCOMPONENT_SURFACE_DESTROY) {
+                render->OnSurfaceDestroyed(nativexcomponet, msgData.window);
+            } else {
+                CC_ASSERT(false);
+            }
+            continue;
+        }
+
+        if (msgData.type == MessageType::WM_APP_SHOW) {
+            render->OnShowNative();
+        } else if (msgData.type == MessageType::WM_APP_HIDE) {
+            render->OnHideNative();
+        } else if (msgData.type == MessageType::WM_APP_DESTROY) {
+            render->OnDestroyNative();
+        }
+        if(msgData.type == MessageType::WM_VSYNC) {
+            // render->runTask();
+        }
+    }
 }
 
-void PluginRender::SetCurInstanceID(std::string id)
+// static
+void PluginRender::timerCb(uv_timer_t* handle)
 {
-    curId_ = id;
+    // LOGD("PluginRender::timerCb");
+    cocos2d::CCDirector::sharedDirector()->mainLoop();
+    PluginRender::GetInstance()->eglCore_->Update();
 }
 
 void PluginRender::SetNativeXComponent(OH_NativeXComponent* component)
@@ -143,11 +148,52 @@ void PluginRender::SetNativeXComponent(OH_NativeXComponent* component)
     OH_NativeXComponent_RegisterCallback(component_, &PluginRender::callback_);
 }
 
+void PluginRender::workerInit(napi_env env, uv_loop_t* loop) {
+    LOGD("PluginRender::workerInit");
+    workerLoop_ = loop;
+    if (workerLoop_) {
+        uv_async_init(workerLoop_, &messageSignal_, reinterpret_cast<uv_async_cb>(PluginRender::onMessageCallback));
+    }
+}
+
+void PluginRender::sendMsgToWorker(const MessageType& type, OH_NativeXComponent* component, void* window) {
+    WorkerMessageData data{type, static_cast<void*>(component), window};
+    enqueue(data);
+}
+
+void PluginRender::enqueue(const WorkerMessageData& msg) {
+    messageQueue_.enqueue(msg);
+    triggerMessageSignal();
+}
+
+bool PluginRender::dequeue(WorkerMessageData* msg) {
+    return messageQueue_.dequeue(msg);
+}
+
+void PluginRender::triggerMessageSignal() {
+    if(workerLoop_ != nullptr) {
+        // It is possible that when the message is sent, the worker thread has not yet started.
+        uv_async_send(&messageSignal_);
+    }
+}
+
+void PluginRender::run() {
+    LOGD("PluginRender::run");
+    if (workerLoop_) {
+    // Todo: Starting the timer in this way is inaccurate and will be fixed later.
+        uv_timer_init(workerLoop_, &timerHandle_);
+    // 1s = 1000ms = 60fps;
+    // 1000ms / 60fps = 16 ms/fps
+        uv_timer_start(&timerHandle_, &PluginRender::timerCb, 16, true);
+    }
+}
+
 void Cocos2dxRenderer_nativeInit(int w, int h);
 void PluginRender::OnSurfaceCreated(OH_NativeXComponent* component, void* window)
 {
     LOGD("PluginRender::OnSurfaceCreated");
-    int32_t ret=OH_NativeXComponent_GetXComponentSize(component, window, &width_, &height_);
+    eglCore_ = new EGLCore();
+    int32_t ret = OH_NativeXComponent_GetXComponentSize(component, window, &width_, &height_);
     if (ret == OH_NATIVEXCOMPONENT_RESULT_SUCCESS) {
         eglCore_->GLContextInit(window, width_, height_);
         Cocos2dxRenderer_nativeInit(width_, height_);
@@ -164,44 +210,62 @@ void PluginRender::OnSurfaceDestroyed(OH_NativeXComponent* component, void* wind
 
 void PluginRender::DispatchTouchEvent(OH_NativeXComponent* component, void* window)
 {
+    OH_NativeXComponent_TouchEvent* touchEvent;
+    while(!touchEventQueue_.empty()) {
+        touchEvent = touchEventQueue_.front();
+        touchEventQueue_.pop();
 
-    int32_t ret = OH_NativeXComponent_GetTouchEvent(component, window, &touchEvent_);
-
-    if (ret == OH_NATIVEXCOMPONENT_RESULT_SUCCESS) {
-        LOGD("Touch Info : x = %{public}f, y = %{public}f screenx = %{public}f, screeny = %{public}f", touchEvent_.x, touchEvent_.y, touchEvent_.screenX, touchEvent_.screenY);
-        for (int i=0;i<touchEvent_.numPoints;i++) {
-            LOGE("Touch Info : dots[%{public}d] id %{public}d x = %{public}f, y = %{public}f", i, touchEvent_.touchPoints[i].id, touchEvent_.touchPoints[i].x, touchEvent_.touchPoints[i].y);
-            LOGE("Touch Info : screenx = %{public}f, screeny = %{public}f", touchEvent_.touchPoints[i].screenX, touchEvent_.touchPoints[i].screenY);
-            LOGE("vtimeStamp = %{public}llu, isPressed = %{public}d", touchEvent_.touchPoints[i].timeStamp, touchEvent_.touchPoints[i].isPressed);
-            switch (touchEvent_.touchPoints[i].type) {
-                        case OH_NATIVEXCOMPONENT_DOWN:
-                            Cocos2dxRenderer_nativeTouchesBegin(touchEvent_.touchPoints[i].id, touchEvent_.touchPoints[i].x, touchEvent_.touchPoints[i].y);
-                            LOGD("Touch Info : OH_NATIVEXCOMPONENT_DOWN");
-                            break;
-                        case OH_NATIVEXCOMPONENT_UP:
-                            Cocos2dxRenderer_nativeTouchesEnd(touchEvent_.touchPoints[i].id, touchEvent_.touchPoints[i].x, touchEvent_.touchPoints[i].y);
-                            LOGD("Touch Info : OH_NATIVEXCOMPONENT_UP");
-                            break;
-                        case OH_NATIVEXCOMPONENT_MOVE:
-                            Cocos2dxRenderer_nativeTouchesMove(touchEvent_.touchPoints[i].id, touchEvent_.touchPoints[i].x, touchEvent_.touchPoints[i].y);
-                            LOGD("Touch Info : OH_NATIVEXCOMPONENT_MOVE");
-                            break;
-                        case OH_NATIVEXCOMPONENT_CANCEL:
-                            Cocos2dxRenderer_nativeTouchesCancel(touchEvent_.touchPoints[i].id, touchEvent_.touchPoints[i].x, touchEvent_.touchPoints[i].y);
-                            LOGD("Touch Info : OH_NATIVEXCOMPONENT_CANCEL");
-                            break;
-                        case OH_NATIVEXCOMPONENT_UNKNOWN:
-                            LOGD("Touch Info : OH_NATIVEXCOMPONENT_UNKNOWN");
-                            break;
-                        default:
-                            LOGD("Touch Info : default");
-                            break;
-                    }
+        LOGD("Touch Info : x = %{public}f, y = %{public}f screenx = %{public}f, screeny = %{public}f", touchEvent->x, touchEvent->y, touchEvent->screenX, touchEvent->screenY);
+        for (int i = 0; i < touchEvent->numPoints; i++) {
+            LOGD("Touch Info : dots[%{public}d] id %{public}d x = %{public}f, y = %{public}f", i, touchEvent->touchPoints[i].id, touchEvent->touchPoints[i].x, touchEvent->touchPoints[i].y);
+            LOGD("Touch Info : screenx = %{public}f, screeny = %{public}f", touchEvent->touchPoints[i].screenX, touchEvent->touchPoints[i].screenY);
+            LOGD("vtimeStamp = %{public}llu, isPressed = %{public}d", touchEvent->touchPoints[i].timeStamp, touchEvent->touchPoints[i].isPressed);
+            switch (touchEvent->touchPoints[i].type) {
+                case OH_NATIVEXCOMPONENT_DOWN:
+                    Cocos2dxRenderer_nativeTouchesBegin(touchEvent->touchPoints[i].id, touchEvent->touchPoints[i].x, touchEvent->touchPoints[i].y);
+                    LOGD("Touch Info : OH_NATIVEXCOMPONENT_DOWN");
+                    break;
+                case OH_NATIVEXCOMPONENT_UP:
+                    Cocos2dxRenderer_nativeTouchesEnd(touchEvent->touchPoints[i].id, touchEvent->touchPoints[i].x, touchEvent->touchPoints[i].y);
+                    LOGD("Touch Info : OH_NATIVEXCOMPONENT_UP");
+                    break;
+                case OH_NATIVEXCOMPONENT_MOVE:
+                    Cocos2dxRenderer_nativeTouchesMove(touchEvent->touchPoints[i].id, touchEvent->touchPoints[i].x, touchEvent->touchPoints[i].y);
+                    LOGD("Touch Info : OH_NATIVEXCOMPONENT_MOVE");
+                    break;
+                case OH_NATIVEXCOMPONENT_CANCEL:
+                    Cocos2dxRenderer_nativeTouchesCancel(touchEvent->touchPoints[i].id, touchEvent->touchPoints[i].x, touchEvent->touchPoints[i].y);
+                    LOGD("Touch Info : OH_NATIVEXCOMPONENT_CANCEL");
+                    break;
+                case OH_NATIVEXCOMPONENT_UNKNOWN:
+                    LOGD("Touch Info : OH_NATIVEXCOMPONENT_UNKNOWN");
+                    break;
+                default:
+                    LOGD("Touch Info : default");
+                    break;
+            }
         }
-    } else {
-        LOGE("Touch fail");
+        free(touchEvent);
     }
+}
 
+void PluginRender::OnCreateNative(napi_env env, uv_loop_t* loop) {
+    LOGD("PluginRender::OnCreateNative");
+}
+
+void PluginRender::OnShowNative() {
+    LOGD("PluginRender::OnShowNative");
+    uv_timer_start(&timerHandle_, &PluginRender::timerCb, 16, true);
+}
+
+void PluginRender::OnHideNative() {
+    LOGD("PluginRender::OnHideNative");
+    uv_timer_stop(&timerHandle_);
+}
+
+void PluginRender::OnDestroyNative() {
+    LOGD("PluginRender::OnDestoryNative");
+    uv_timer_stop(&timerHandle_);
 }
 
 napi_value PluginRender::Export(napi_env env, napi_value exports)
@@ -219,41 +283,12 @@ napi_value PluginRender::Export(napi_env env, napi_value exports)
 
 napi_value PluginRender::NapiChangeShape(napi_env env, napi_callback_info info)
 {
-    LOGD("NapiChangeShape");
-#if 1
-    napi_value exportInstance;
-    napi_value thisArg;
-    napi_status status;
-    OH_NativeXComponent *nativeXComponent = nullptr;
-
-    int32_t ret;
-    char idStr[OH_XCOMPONENT_ID_LEN_MAX + 1] = {};
-    uint64_t idSize = OH_XCOMPONENT_ID_LEN_MAX + 1;
-
-    // napi_value thisArg;
-    NAPI_CALL(env, napi_get_cb_info(env, info, NULL, NULL, &thisArg, NULL));
-
-    status = napi_get_named_property(env, thisArg, OH_NATIVE_XCOMPONENT_OBJ, &exportInstance);
-    if (status != napi_ok) {
-        return nullptr;
-    };
-
-    status = napi_unwrap(env, exportInstance, reinterpret_cast<void**>(&nativeXComponent));
-    if (status != napi_ok) {
-        return nullptr;
-    }
-
-    ret = OH_NativeXComponent_GetXComponentId(nativeXComponent, idStr, &idSize);
-    if (ret != OH_NATIVEXCOMPONENT_RESULT_SUCCESS) {
-        return nullptr;
-    }
-    std::string id(idStr);
-    PluginRender* instance = PluginRender::GetInstance(id);
+    LOGD("PluginRender::NapiChangeShape");
+    PluginRender* instance = PluginRender::GetInstance();
     if (instance) {
         CCDirector::sharedDirector()->mainLoop();
         instance->eglCore_->Update();
     }
-#endif // nullptr
     return nullptr;
 }
 
