@@ -25,7 +25,8 @@
             ]
           }
         ],
-        "orientation": "landscape",
+        // "orientation": "landscape",
+        "orientation": "unspecified",
         "visible": true,
         "srcPath": "MainAbility",
         "name": ".MainAbility",

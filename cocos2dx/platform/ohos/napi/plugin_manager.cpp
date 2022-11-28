@@ -28,10 +28,11 @@ enum ContextType {
     APP_LIFECYCLE = 0,
     JS_PAGE_LIFECYCLE,
     RAW_FILE_UTILS,
+    WORKER_INIT,
+    NATIVE_RENDER_API,
 };
 
 NapiManager NapiManager::manager_;
-uv_timer_t* NapiManager::renderTimer_ = new uv_timer_t;
 
 napi_value NapiManager::GetContext(napi_env env, napi_callback_info info)
 {
@@ -75,7 +76,6 @@ napi_value NapiManager::GetContext(napi_env env, napi_callback_info info)
                 };
                 NAPI_CALL(env, napi_define_properties(env, exports, sizeof(desc) / sizeof(desc[0]), desc));
             }
-
             break;
         case JS_PAGE_LIFECYCLE:
             {
@@ -86,12 +86,10 @@ napi_value NapiManager::GetContext(napi_env env, napi_callback_info info)
                     DECLARE_NAPI_FUNCTION("onPageHide", NapiManager::NapiOnPageHide),
                 };
                 NAPI_CALL(env, napi_define_properties(env, exports, sizeof(desc) / sizeof(desc[0]), desc));
-
             }
             break;
         case RAW_FILE_UTILS:
             #if 1
-        
             {
                 /****************  声明式开发范式 JS Page 生命周期注册 ****************************/
                 LOGD("GetContext RAW_FILE_UTILS");
@@ -103,6 +101,24 @@ napi_value NapiManager::GetContext(napi_env env, napi_callback_info info)
             }
             #endif 
             break;
+        case WORKER_INIT:
+            {
+                LOGD("NapiManager::GetContext WORKER_INIT");
+                napi_property_descriptor desc[] = {
+                    DECLARE_NAPI_FUNCTION("workerInit", NapiManager::napiWorkerInit),
+                };
+                NAPI_CALL(env, napi_define_properties(env, exports, sizeof(desc) / sizeof(desc[0]), desc));
+            }
+            break;
+        case NATIVE_RENDER_API:
+            {
+                LOGD("NapiManager::GetContext NATIVE_RENDER_API");
+                napi_property_descriptor desc[] = {
+                    DECLARE_NAPI_FUNCTION("nativeEngineStart", NapiManager::napiNativeEngineStart),
+                };
+                NAPI_CALL(env, napi_define_properties(env, exports, sizeof(desc) / sizeof(desc[0]), desc));
+            }
+            break;
         default:
             LOGE("unknown type");
     }
@@ -111,6 +127,7 @@ napi_value NapiManager::GetContext(napi_env env, napi_callback_info info)
 
 bool NapiManager::Export(napi_env env, napi_value exports)
 {
+    LOGD("NapiManager::Export");
     napi_status status;
     napi_value exportInstance = nullptr;
     OH_NativeXComponent *nativeXComponent = nullptr;
@@ -128,53 +145,24 @@ bool NapiManager::Export(napi_env env, napi_value exports)
         return false;
     }
 
-    ret = OH_NativeXComponent_GetXComponentId(nativeXComponent, idStr, &idSize);
-    if (ret != OH_NATIVEXCOMPONENT_RESULT_SUCCESS) {
-        return false;
-    }
-
-    std::string id(idStr);
     auto context = NapiManager::GetInstance();
     if (context) {
-        context->SetNativeXComponent(id, nativeXComponent);
-        auto render = context->GetRender(id);
-        render->SetNativeXComponent(nativeXComponent);
-        render->Export(env, exports);
+        context->SetNativeXComponent(nativeXComponent);
+        PluginRender::GetInstance()->SetNativeXComponent(nativeXComponent);
+        PluginRender::GetInstance()->Export(env, exports);
         return true;
     }
-
     return false;
 }
 
-void NapiManager::SetNativeXComponent(std::string& id, OH_NativeXComponent* nativeXComponent)
+void NapiManager::SetNativeXComponent(OH_NativeXComponent* nativeXComponent)
 {
-    if (nativeXComponentMap_.find(id) == nativeXComponentMap_.end()) {
-        nativeXComponentMap_[id] = nativeXComponent;
-    } else {
-        if (nativeXComponentMap_[id] != nativeXComponent) {
-            nativeXComponentMap_[id] = nativeXComponent;
-        }
-    }
+    nativeXComponent_ = nativeXComponent;
 }
 
-OH_NativeXComponent* NapiManager::GetNativeXComponent(std::string& id)
+OH_NativeXComponent* NapiManager::GetNativeXComponent()
 {
-    if (nativeXComponentMap_.find(id) == nativeXComponentMap_.end()) {
-        return nullptr;
-    } else {
-        return nativeXComponentMap_[id];
-    }
-}
-
-PluginRender* NapiManager::GetRender(std::string& id)
-{
-    if (pluginRenderMap_.find(id) == pluginRenderMap_.end()) {
-        PluginRender* instance = PluginRender::GetInstance(id);
-        pluginRenderMap_[id] = instance;
-        return instance;
-    } else {
-        return pluginRenderMap_[id];
-    }
+    return nativeXComponent_;
 }
 
 void NapiManager::MainOnMessage(const uv_async_t* req)
@@ -182,75 +170,48 @@ void NapiManager::MainOnMessage(const uv_async_t* req)
     LOGD("MainOnMessage Triggered");
 }
 
-void uv_timer(uv_timer_t *handle) {
-    // LOGD("NapiManager::uv_timer");
-    PluginRender* instance = PluginRender::GetInstance(*PluginRender::GetCurInstanceID());
-    if(!instance) {
-        return;
-    }
-    cocos2d::CCDirector::sharedDirector()->mainLoop();
-    instance->eglCore_->Update();
-}
-
 napi_value NapiManager::NapiOnCreate(napi_env env, napi_callback_info info)
 {
     LOGD("NapiManager::NapiOnCreate");
-    uv_loop_t* loop = nullptr;
-    NAPI_CALL(env, napi_get_uv_event_loop(env, &loop));
-    NapiManager::GetInstance()->OnCreateNative(env, loop);
-    uv_timer_init(loop, renderTimer_);
-    uv_timer_start(renderTimer_, uv_timer, 0, 16);
     return nullptr;
 }
 
 napi_value NapiManager::NapiOnShow(napi_env env, napi_callback_info info)
 {
     LOGD("NapiManager::NapiOnShow");
-    uv_loop_t* loop = nullptr;
-    NAPI_CALL(env, napi_get_uv_event_loop(env, &loop));
-    NapiManager::GetInstance()->OnCreateNative(env, loop);
-    uv_timer_init(loop, renderTimer_);
-    uv_timer_start(renderTimer_, uv_timer, 0, 16);
-    NapiManager::GetInstance()->OnShowNative();
+    WorkerMessageData data{MessageType::WM_APP_SHOW, nullptr, nullptr};
+    PluginRender::GetInstance()->enqueue(data);
     return nullptr;
 }
 
 napi_value NapiManager::NapiOnHide(napi_env env, napi_callback_info info)
 {
     LOGD("NapiManager::NapiOnHide");
-    NapiManager::GetInstance()->OnHideNative();
+    WorkerMessageData data{MessageType::WM_APP_HIDE, nullptr, nullptr};
+    PluginRender::GetInstance()->enqueue(data);
     return nullptr;
 }
 
 napi_value NapiManager::NapiOnDestroy(napi_env env, napi_callback_info info)
 {
     LOGD("NapiManager::NapiOnDestroy");
-    uv_timer_stop(renderTimer_);
-    NapiManager::GetInstance()->OnDestroyNative();
+    WorkerMessageData data{MessageType::WM_APP_DESTROY, nullptr, nullptr};
+    PluginRender::GetInstance()->enqueue(data);
     return nullptr;
 }
 
-void NapiManager::OnCreateNative(napi_env env, uv_loop_t* loop)
-{
-    LOGD("NapiManager::OnCreateNative");
-    mainEnv_ = env;
-    mainLoop_ = loop;
-    if (mainLoop_) {
-        uv_async_init(mainLoop_, &mainOnMessageSignal_, reinterpret_cast<uv_async_cb>(NapiManager::MainOnMessage));
-    }
+napi_value NapiManager::napiWorkerInit(napi_env env, napi_callback_info info) {
+    LOGD("NapiManager::napiWorkerInit");
+    uv_loop_t* loop = nullptr;
+    NAPI_CALL(env, napi_get_uv_event_loop(env, &loop));
+    PluginRender::GetInstance()->workerInit(env, loop);
+    return nullptr;
 }
 
-void NapiManager::OnShowNative()
-{
-    LOGD("NapiManager::OnShowNative");
-}
-void NapiManager::OnHideNative()
-{
-    LOGD("NapiManager::OnHideNative");
-}
-void NapiManager::OnDestroyNative()
-{
-    LOGD("NapiManager::OnDestroyNative");
+napi_value NapiManager::napiNativeEngineStart(napi_env env, napi_callback_info info) {
+    LOGD("NapiManager::napiNativeEngineStart");
+    PluginRender::GetInstance()->run();
+    return nullptr;
 }
 
 napi_value NapiManager::NapiOnPageShow(napi_env env, napi_callback_info info)

@@ -24,12 +24,11 @@
 
 class EGLCore {
 public:
-    EGLCore(std::string& id) : id_(id) {};
+    EGLCore() {};
     void GLContextInit(void* window, int w, int h);
     void Update();
 
 public:
-    std::string id_;
     int width_;
     int height_;
 

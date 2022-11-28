@@ -27,6 +27,7 @@ add_library(nativerender SHARED
             render/plugin_render.cpp
             plugin_manager.cpp
             napi_init.cpp
+            WorkerMessageQueue.cpp
             modules/RawFileUtils.cpp
             )
 
