@@ -138,8 +138,10 @@ void PluginRender::onMessageCallback(const uv_async_t* /* req */) {
 void PluginRender::timerCb(uv_timer_t* handle)
 {
     // LOGD("PluginRender::timerCb");
-    cocos2d::CCDirector::sharedDirector()->mainLoop();
-    PluginRender::GetInstance()->eglCore_->Update();
+    if (PluginRender::GetInstance()->eglCore_ != nullptr) {
+        cocos2d::CCDirector::sharedDirector()->mainLoop();
+        PluginRender::GetInstance()->eglCore_->Update();
+    }
 }
 
 void PluginRender::SetNativeXComponent(OH_NativeXComponent* component)
@@ -153,6 +155,9 @@ void PluginRender::workerInit(napi_env env, uv_loop_t* loop) {
     workerLoop_ = loop;
     if (workerLoop_) {
         uv_async_init(workerLoop_, &messageSignal_, reinterpret_cast<uv_async_cb>(PluginRender::onMessageCallback));
+        if (!messageQueue_.empty()) {
+            triggerMessageSignal(); // trigger the signal to handle the pending message
+        }
     }
 }
 
@@ -182,6 +187,7 @@ void PluginRender::run() {
     if (workerLoop_) {
     // Todo: Starting the timer in this way is inaccurate and will be fixed later.
         uv_timer_init(workerLoop_, &timerHandle_);
+        timerInited_ = true;
     // 1s = 1000ms = 60fps;
     // 1000ms / 60fps = 16 ms/fps
         uv_timer_start(&timerHandle_, &PluginRender::timerCb, 16, true);
@@ -255,17 +261,23 @@ void PluginRender::OnCreateNative(napi_env env, uv_loop_t* loop) {
 
 void PluginRender::OnShowNative() {
     LOGD("PluginRender::OnShowNative");
-    uv_timer_start(&timerHandle_, &PluginRender::timerCb, 16, true);
+    if (timerInited_) {
+        uv_timer_start(&timerHandle_, &PluginRender::timerCb, 16, true);
+    }
 }
 
 void PluginRender::OnHideNative() {
     LOGD("PluginRender::OnHideNative");
-    uv_timer_stop(&timerHandle_);
+    if (timerInited_) {
+        uv_timer_stop(&timerHandle_);
+    }
 }
 
 void PluginRender::OnDestroyNative() {
     LOGD("PluginRender::OnDestoryNative");
-    uv_timer_stop(&timerHandle_);
+    if (timerInited_) {
+        uv_timer_stop(&timerHandle_);
+    }
 }
 
 napi_value PluginRender::Export(napi_env env, napi_value exports)

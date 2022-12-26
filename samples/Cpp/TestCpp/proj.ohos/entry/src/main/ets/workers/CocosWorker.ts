@@ -17,7 +17,7 @@ import worker from '@ohos.worker';
 import nativerender from "libnativerender.so";
 import { ContextType } from "../common/Constants"
 
-console.log("[cocos] native render workerInit");
+console.log("[cocos] native render workerInit =-------> ");
 const nativeContext = nativerender.getContext(ContextType.WORKER_INIT);
 nativeContext.workerInit()
 

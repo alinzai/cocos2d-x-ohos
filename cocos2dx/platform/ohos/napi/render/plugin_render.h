@@ -76,10 +76,11 @@ public:
 
     OH_NativeXComponent* component_{nullptr};
     uv_timer_t timerHandle_;
+    bool timerInited_{false};
     uv_loop_t* workerLoop_{nullptr};
     uv_async_t messageSignal_{};
     WorkerMessageQueue messageQueue_;
-    EGLCore* eglCore_;
+    EGLCore* eglCore_{nullptr};
 
     uint64_t width_;
     uint64_t height_;

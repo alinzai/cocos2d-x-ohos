@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5e40cb7d-965f-4348-b590-d83fabf70c13" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../cocos2dx/platform/ohos/napi/render/plugin_render.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../cocos2dx/platform/ohos/napi/render/plugin_render.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../cocos2dx/platform/ohos/napi/render/plugin_render.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../cocos2dx/platform/ohos/napi/render/plugin_render.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloCpp/proj.ohos/build-profile.json5" beforeDir="false" afterPath="$PROJECT_DIR$/../../HelloCpp/proj.ohos/build-profile.json5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloCpp/proj.ohos/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../HelloCpp/proj.ohos/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj.ohos/AppScope/resources/base/element/string.json" beforeDir="false" afterPath="$PROJECT_DIR$/../proj.ohos/AppScope/resources/base/element/string.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entry/src/main/ets/common/Constants.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/entry/src/main/ets/workers/CocosWorker.ts" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="2JRXgTAEaTgaZiao7mFjzewG36o" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../HelloCpp/proj.ohos" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\lhl\cocos2d-x-ohos\samples\Cpp\TestCpp\proj.ohos3\entry\src\main\ets" />
+      <recent name="D:\lhl\cocos2d-x-ohos\samples\Cpp\TestCpp\proj.ohos3\entry\src\main\ets\entryability" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\lhl\cocos2d-x-ohos\samples\Cpp\TestCpp\proj.ohos3\entry\src\main\ets\workers" />
+    </key>
+  </component>
+  <component name="RunManager" selected="OpenHarmony App.entry">
+    <configuration name="etsxcomponent [assembleHap]" type="HvigorRunConfiguration" factoryName="HvigorRunConfiguration" temporary="true">
+      <option name="applicationParameters" value="--mode module -p product=default assembleHap" />
+      <option name="nodeInterpreter" value="C:\Users\hisi\nodejs" />
+      <option name="scriptFile" value="D:\lhl\cocos2d-x-ohos\samples\Cpp\TestCpp\proj.ohos3\node_modules\@ohos\hvigor\bin\hvigor.js" />
+      <option name="workingDir" value="D:\lhl\cocos2d-x-ohos\samples\Cpp\TestCpp\proj.ohos3" />
+      <method v="2" />
+    </configuration>
+    <configuration name="etsxcomponent [clean]" type="HvigorRunConfiguration" factoryName="HvigorRunConfiguration" temporary="true">
+      <option name="applicationParameters" value="clean" />
+      <option name="nodeInterpreter" value="C:\Users\hisi\nodejs" />
+      <option name="scriptFile" value="D:\lhl\cocos2d-x-ohos\samples\Cpp\TestCpp\proj.ohos3\node_modules\@ohos\hvigor\bin\hvigor.js" />
+      <option name="workingDir" value="D:\lhl\cocos2d-x-ohos\samples\Cpp\TestCpp\proj.ohos3" />
+      <method v="2" />
+    </configuration>
+    <configuration name="entry" type="OhosDebugTask" factoryName="OpenHarmony App">
+      <DEPLOY_MULTI_HAP>false</DEPLOY_MULTI_HAP>
+      <REINSTALL_APPLICATION>false</REINSTALL_APPLICATION>
+      <DEBUGGER_TYPE>Detect Automatically</DEBUGGER_TYPE>
+      <method v="2">
+        <option name="Build.Hvigor.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Hvigor.etsxcomponent [assembleHap]" />
+        <item itemvalue="Hvigor.etsxcomponent [clean]" />
+        <item itemvalue="Hvigor.etsxcomponent [assembleHap]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+</project>

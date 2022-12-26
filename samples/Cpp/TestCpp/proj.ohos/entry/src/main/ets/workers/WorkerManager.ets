@@ -21,7 +21,9 @@ export class WorkerManager {
     private cocosWorker: any;
 
     private constructor() {
-        this.cocosWorker = new worker.Worker("./workers/cocos_worker.ts", {type:"classic", name: "CocosWorker"});
+        console.log("LIFESTYLE 1111111");
+        this.cocosWorker = new worker.Worker("/entry/ets/workers/CocosWorker.ts", {type:"classic", name: "CocosWorker"});
+        console.log("LIFESTYLE 222222");
         this.cocosWorker.onerror = function (e) {
             var msg = e.message;
             var filename = e.filename;

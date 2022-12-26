@@ -11,7 +11,7 @@ extern "C"
 
 void Cocos2dxRenderer_nativeInit(int w, int h)
 {
-    OHOS_LOGD("Cocos2dxRenderer_nativeInit() - window width:[%d], height:[%d]", w, h);
+    OHOS_LOGE("Cocos2dxRenderer_nativeInit() - window width:[%d], height:[%d]", w, h);
     if (!CCDirector::sharedDirector()->getOpenGLView())
     {
         CCEGLView *view = CCEGLView::sharedOpenGLView();
