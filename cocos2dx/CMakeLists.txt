@@ -99,6 +99,7 @@ set(COCOS2DX_SRC
     platform/ohos/CCFileUtilsOhos.cpp
     platform/ohos/CCImage.cpp
     platform/ohos/CCTextBitmap.cpp
+	platform/ohos/JsAudioEngine.cpp
     platform/ohos/napi/modules/Java_org_cocos2dx_lib_Cocos2dxBitmap.cpp
     platform/ohos/napi/modules/Java_org_cocos2dx_lib_Cocos2dxHelper.cpp
     # platform/ohos/napi/modules/Java_org_cocos2dx_lib_Cocos2dxRenderer.cpp
