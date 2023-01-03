@@ -23,6 +23,7 @@
 #include "plugin_manager.h"
 #include "plugin_common.h"
 #include "cocos2d.h"
+#include "JsAudioEngine.h"
 
 enum ContextType {
     APP_LIFECYCLE = 0,
@@ -211,6 +212,7 @@ napi_value NapiManager::napiWorkerInit(napi_env env, napi_callback_info info) {
 napi_value NapiManager::napiNativeEngineStart(napi_env env, napi_callback_info info) {
     LOGD("NapiManager::napiNativeEngineStart");
     PluginRender::GetInstance()->run();
+	cocos2d::JsAudioEngine::initJsAudioEngine(env, nullptr);
     return nullptr;
 }
 

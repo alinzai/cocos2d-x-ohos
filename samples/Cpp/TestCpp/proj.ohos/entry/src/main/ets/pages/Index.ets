@@ -30,6 +30,8 @@ struct Index {
           console.log('[cocos] XComponent.onLoad Callback');
           this.context = context;
           this.cocosWorker.postMessage({type: "onXCLoad", data: "XComponent"});
+          this.cocosWorker.postMessage({type: "audioInit", data: globalThis.abilityContext});
+
         })
         .onDestroy(() => {
         })

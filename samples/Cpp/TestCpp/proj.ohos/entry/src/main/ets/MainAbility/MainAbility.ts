@@ -9,6 +9,7 @@ const rawFileUtils = nativerender.getContext(ContextType.RAW_FILE_UTILS);
 export default class MainAbility extends Ability {
     onCreate(want, launchParam) {
         nativeAppLifecycle.onCreate();
+        globalThis.abilityContext = this.context;
         console.info('[LIFECYCLE-App] onCreate')
     }
 

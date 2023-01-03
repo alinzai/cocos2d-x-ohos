@@ -16,6 +16,8 @@
 import worker from '@ohos.worker';
 import nativerender from "libnativerender.so";
 import { ContextType } from "../common/Constants"
+import "@ohos/libcocos2dx/src/main/ets/components/audio/AudioEngine"
+
 
 console.log("[cocos] native render workerInit =-------> ");
 const nativeContext = nativerender.getContext(ContextType.WORKER_INIT);
@@ -30,6 +32,9 @@ parentPort.onmessage = function(e) {
             console.log("[cocos] onXCload Callback");
             const renderContext = nativerender.getContext(ContextType.NATIVE_RENDER_API);
             renderContext.nativeEngineStart();
+            break;
+        case "audioInit":
+            globalThis.abilityContext = data.data;
             break;
         default:
             console.error("cocos worker: message type unknown")
