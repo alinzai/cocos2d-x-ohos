@@ -2,6 +2,7 @@
 import nativerender from "libnativerender.so";
 import { ContextType } from "../common/Constants"
 import { WorkerManager } from "../workers/WorkerManager"
+import ThreadUtils from "@ohos/libcocos2dx/src/main/ets/components/thread/ThreadUtils"
 import window from '@ohos.window'
 
 const nativePageLifecycle = nativerender.getContext(ContextType.JSPAGE_LIFECYCLE);
@@ -31,7 +32,7 @@ struct Index {
           this.context = context;
           this.cocosWorker.postMessage({type: "onXCLoad", data: "XComponent"});
           this.cocosWorker.postMessage({type: "audioInit", data: globalThis.abilityContext});
-
+          this.cocosWorker.onmessage = ThreadUtils.recvWorkerThreadMessage;
         })
         .onDestroy(() => {
         })

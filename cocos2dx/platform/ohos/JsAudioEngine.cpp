@@ -17,7 +17,6 @@ napi_value JsAudioEngine::initJsAudioEngine(napi_env env, napi_value exports)
 {
     LOGD("initJsAudioEngine start!");
     _env = env;
-    LOGD("initJsAudioEngine end!");
     return 0;
 }
 
