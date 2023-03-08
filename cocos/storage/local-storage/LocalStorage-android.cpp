@@ -37,8 +37,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
-#include "jni.h"
-#include "platform/android/jni/JniHelper.h"
+//#include "jni.h"
+//#include "platform/android/jni/JniHelper.h"
 
 USING_NS_CC;
 static int _initialized = 0;
@@ -64,71 +64,78 @@ void localStorageInit( const std::string& fullpath)
     {
         std::string strDBFilename = fullpath;
         splitFilename(strDBFilename);
-        if (JniHelper::callStaticBooleanMethod(className, "init", strDBFilename, "data")) {
-            _initialized = 1;
-        }
+        // TBD need fixed 
+//        if (JniHelper::callStaticBooleanMethod(className, "init", strDBFilename, "data")) {
+//            _initialized = 1;
+//        }
     }
 }
 
 void localStorageFree()
 {
-    if (_initialized) {
-        JniHelper::callStaticVoidMethod(className, "destroy");
-        _initialized = 0;
-    }
+    // TBD need fixed 
+//    if (_initialized) {
+//        JniHelper::callStaticVoidMethod(className, "destroy");
+//        _initialized = 0;
+//    }
 }
 
 /** sets an item in the LS */
 void localStorageSetItem( const std::string& key, const std::string& value)
 {
     assert( _initialized );
-    JniHelper::callStaticVoidMethod(className, "setItem", key, value);
+    // TBD need fixed 
+//    JniHelper::callStaticVoidMethod(className, "setItem", key, value);
 }
 
 /** gets an item from the LS */
 bool localStorageGetItem( const std::string& key, std::string *outItem )
 {
-    assert( _initialized );
-    JniMethodInfo t;
-
-    if (JniHelper::getStaticMethodInfo(t, className.c_str(), "getItem", "(Ljava/lang/String;)Ljava/lang/String;"))
-    {
-        jstring jkey = t.env->NewStringUTF(key.c_str());
-        jstring jret = (jstring)t.env->CallStaticObjectMethod(t.classID, t.methodID, jkey);
-        if (jret == nullptr)
-        {
-            t.env->DeleteLocalRef(jret);
-            t.env->DeleteLocalRef(jkey);
-            t.env->DeleteLocalRef(t.classID);
-            return false;
-        }
-        else 
-        {
-            outItem->assign(JniHelper::jstring2string(jret));
-            t.env->DeleteLocalRef(jret);
-            t.env->DeleteLocalRef(jkey);
-            t.env->DeleteLocalRef(t.classID);
-            return true;
-        }
-    }
-    else
-    {
-        return false;
-    }
+//    assert( _initialized );
+//    JniMethodInfo t;
+//
+//    if (JniHelper::getStaticMethodInfo(t, className.c_str(), "getItem", "(Ljava/lang/String;)Ljava/lang/String;"))
+//    {
+//        jstring jkey = t.env->NewStringUTF(key.c_str());
+//        jstring jret = (jstring)t.env->CallStaticObjectMethod(t.classID, t.methodID, jkey);
+//        if (jret == nullptr)
+//        {
+//            t.env->DeleteLocalRef(jret);
+//            t.env->DeleteLocalRef(jkey);
+//            t.env->DeleteLocalRef(t.classID);
+//            return false;
+//        }
+//        else 
+//        {
+//            outItem->assign(JniHelper::jstring2string(jret));
+//            t.env->DeleteLocalRef(jret);
+//            t.env->DeleteLocalRef(jkey);
+//            t.env->DeleteLocalRef(t.classID);
+//            return true;
+//        }
+//    }
+//    else
+//    {
+//        return false;
+//    }
+    // TBD need fixed 
+    return false;
 }
 
 /** removes an item from the LS */
 void localStorageRemoveItem( const std::string& key )
 {
     assert( _initialized );
-    JniHelper::callStaticVoidMethod(className, "removeItem", key);
+    // TBD need fixed 
+//    JniHelper::callStaticVoidMethod(className, "removeItem", key);
 }
 
 /** removes all items from the LS */
 void localStorageClear()
 {
     assert( _initialized );
-    JniHelper::callStaticVoidMethod(className, "clear");
+    // TBD need fixed 
+//    JniHelper::callStaticVoidMethod(className, "clear");
 }
 
 #endif // #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)

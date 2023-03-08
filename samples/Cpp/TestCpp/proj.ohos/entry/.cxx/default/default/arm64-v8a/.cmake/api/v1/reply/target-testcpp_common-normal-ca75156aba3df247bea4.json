@@ -1,0 +1,1895 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/proj.ohos/entry/build/default/intermediates/cmake/default/obj/arm64-v8a/libtestcpp_common.so"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_directories",
+			"target_link_libraries",
+			"add_compile_options",
+			"add_definitions",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 222,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 224,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 270,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 225,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 200,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 187,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 186,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 7,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 189,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -D__MUSL__ -fPIC  "
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-DUSE_FILE32API"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-overloaded-virtual"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-unused-function"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-unused-private-field"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-unused-variable"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-header-hygiene"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-reorder-ctor"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-unsequenced"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-extra"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-c++11-narrowing"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-format"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-return-stack-address"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-macro-redefined"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-implicit-const-int-float-conversion"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-missing-field-initializers"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-misleading-indentation"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-sign-compare"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-void-pointer-to-int-cast"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-unused-command-line-argument"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-unknown-warning-option"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-DCC_ENABLE_CHIPMUNK_INTEGRATION=1"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-DOpenHarmony=1"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-psabi"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-absolute-value"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-ignored-qualifiers"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-fPIC"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-W"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-DPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 6,
+					"define" : "COCOS2D_DEBUG=3"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "HAVE_CONFIG_H"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "OpenHarmony"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "OpenHarmony=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "USE_FILE32API"
+				},
+				{
+					"define" : "testcpp_common_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 8,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/include"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../external"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../external/lib"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../external/Box2D"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../../curl"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../CocosDenshion/include"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../external/chipmunk/include/chipmunk"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../external/tiff_4_0_3"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../external/tiff_4_0_3/libtiff"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../cocos2dx"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../CocosDenshion/proj.ohos"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../external/chipmunk"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../extensions/proj.ohos"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../extensions"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../Cpp/TestCpp/Classes"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/work/cocos2d-x-ohos/extensions"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/work/cocos2d-x-ohos/extensions/CCBReader"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/work/cocos2d-x-ohos/extensions/GUI/CCControlExtension"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/work/cocos2d-x-ohos/extensions/GUI/CCScrollView"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/work/cocos2d-x-ohos/extensions/LocalStorage"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/work/cocos2d-x-ohos/extensions/CocoStudio/Armature"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/work/cocos2d-x-ohos/extensions/CocoStudio"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/work/cocos2d-x-ohos/extensions/../cocos2dx/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/work/cocos2d-x-ohos/extensions/../cocos2dx"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/work/cocos2d-x-ohos/extensions/../cocos2dx/platform/ohos"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/work/cocos2d-x-ohos/extensions/../external/opengles/api"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/work/cocos2d-x-ohos/extensions/../cocos2dx/kazmath/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/work/cocos2d-x-ohos/extensions/../external/chipmunk/include/chipmunk"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/work/cocos2d-x-ohos/extensions/../CocosDenshion/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/include/curl"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/work/cocos2d-x-ohos/external/Box2D/.."
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/work/cocos2d-x-ohos/external/chipmunk/include/chipmunk"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/work/cocos2d-x-ohos/CocosDenshion/ohos/../include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/work/cocos2d-x-ohos/CocosDenshion/ohos/../../cocos2dx"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/work/cocos2d-x-ohos/CocosDenshion/ohos/../../cocos2dx/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/work/cocos2d-x-ohos/CocosDenshion/ohos/../../cocos2dx/kazmath/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/work/cocos2d-x-ohos/CocosDenshion/ohos/../../cocos2dx/platform/ohos"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/work/cocos2d-x-ohos/CocosDenshion/ohos/../../external/opengles/api"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/kazmath/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/../external/opengles/api"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos/napi/modules"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos/napi/common"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos/napi"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos/napi/render"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112,
+				113,
+				114,
+				115,
+				116,
+				117,
+				118,
+				119,
+				120,
+				121,
+				122,
+				123,
+				124,
+				125,
+				126,
+				127,
+				128,
+				129,
+				130,
+				131,
+				132,
+				133,
+				134,
+				135,
+				136,
+				137,
+				138,
+				139,
+				140,
+				141,
+				142,
+				143,
+				144,
+				145,
+				146,
+				147
+			],
+			"sysroot" : 
+			{
+				"path" : "C:/Users/55059/AppData/Local/OpenHarmony/Sdk/9/native/sysroot"
+			}
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "extensions::@e5419ac090c7b84f1539"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "box2d::@d0095c43d16aa4f10df4"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "chipmunk::@bf95cc8a948caeaf7507"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "cocosdenshion::@b74a0aac62649ade2ede"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "cocos2dx_static::@c5d3e5ea7e9c757c6a75"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "libtiff::@1791caf199f667c9b3f9"
+		}
+	],
+	"id" : "testcpp_common::@1faedec05809330fb696",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "--rtlib=compiler-rt -fuse-ld=lld -Wl,--build-id=sha1 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -lunwind -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-LD:\\work\\cocos2d-x-ohos\\samples\\Cpp\\TestCpp\\..\\external\\lib",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-LD:\\work\\cocos2d-x-ohos\\extensions\\..\\cocos_thirdparty_libs\\install-linux\\aarch64\\lib",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-LD:\\work\\cocos2d-x-ohos\\cocos2dx\\..\\external\\lib",
+				"role" : "libraryPath"
+			},
+			{
+				"fragment" : "-LC:\\Users\\55059\\AppData\\Local\\OpenHarmony\\Sdk\\9\\native\\sysroot\\usr\\lib\\aarch64-linux-ohos",
+				"role" : "libraryPath"
+			},
+			{
+				"fragment" : "-LC:\\Users\\55059\\AppData\\Local\\OpenHarmony\\Sdk\\9\\native\\llvm\\lib\\clang\\12.0.1\\lib\\aarch64-linux-ohos",
+				"role" : "libraryPath"
+			},
+			{
+				"fragment" : "-Wl,-rpath,D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../external/lib:D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/lib:D:/work/cocos2d-x-ohos/cocos2dx/../external/lib:/usr/lib/aarch64-linux-ohos",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-lpng_static",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-lz",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-lturbojpeg_static",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lEGL",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lGLESv3",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lhilog_ndk.z",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lace_ndk.z",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lace_napi.z",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-luv",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lace_napi.z",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-Wl,-Bstatic",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lc++",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "extensionsOut.bin\\libextensions.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-Wl,-Bdynamic",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lace_napi.z",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "extensionsOut.bin\\libextensions.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "extensionsOut.bin\\Box2D\\libbox2d.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "extensionsOut.bin\\chipmunk\\libchipmunk.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "extensionsOut.bin\\cocosdenshion\\libcocosdenshion.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "cocosOut.bin\\libcocos2dx_static.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-lpng_static",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-lz",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-lturbojpeg_static",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lEGL",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lGLESv3",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lhilog_ndk.z",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lace_ndk.z",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lace_napi.z",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-luv",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "cocosOut.bin\\libtiff\\liblibtiff.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lrawfile.z",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-Wl,-Bstatic",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lc++",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-Wl,-Bdynamic",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lnative_drawing",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lcurl",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lssl",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lm",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX",
+		"sysroot" : 
+		{
+			"path" : "C:/Users/55059/AppData/Local/OpenHarmony/Sdk/9/native/sysroot"
+		}
+	},
+	"name" : "testcpp_common",
+	"nameOnDisk" : "libtestcpp_common.so",
+	"paths" : 
+	{
+		"build" : "testcpp",
+		"source" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112,
+				113,
+				114,
+				115,
+				116,
+				117,
+				118,
+				119,
+				120,
+				121,
+				122,
+				123,
+				124,
+				125,
+				126,
+				127,
+				128,
+				129,
+				130,
+				131,
+				132,
+				133,
+				134,
+				135,
+				136,
+				137,
+				138,
+				139,
+				140,
+				141,
+				142,
+				143,
+				144,
+				145,
+				146,
+				147
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/AccelerometerTest/AccelerometerTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ActionManagerTest/ActionManagerTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ActionsTest/ActionsTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ActionsEaseTest/ActionsEaseTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ActionsProgressTest/ActionsProgressTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/Box2DTest/Box2dTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/Box2DTestBed/Box2dView.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/Box2DTestBed/GLES-Render.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/Box2DTestBed/Test.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/Box2DTestBed/TestEntries.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/BugsTest/Bug-1159.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/BugsTest/Bug-1174.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/BugsTest/Bug-350.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/BugsTest/Bug-422.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/BugsTest/Bug-624.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/BugsTest/Bug-886.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/BugsTest/Bug-899.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/BugsTest/Bug-914.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/BugsTest/BugsTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/BugsTest/Bug-458/Bug-458.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/BugsTest/Bug-458/QuestionContainerSprite.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ChipmunkTest/ChipmunkTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ClickAndMoveTest/ClickAndMoveTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ClippingNodeTest/ClippingNodeTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/CocosDenshionTest/CocosDenshionTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/CurlTest/CurlTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/CurrentLanguageTest/CurrentLanguageTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/DrawPrimitivesTest/DrawPrimitivesTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/EffectsAdvancedTest/EffectsAdvancedTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/EffectsTest/EffectsTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/ExtensionsTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/NotificationCenterTest/NotificationCenterTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/ControlExtensionTest/CCControlScene.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/ControlExtensionTest/CCControlSceneManager.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/ControlExtensionTest/CCControlButtonTest/CCControlButtonTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/ControlExtensionTest/CCControlColourPicker/CCControlColourPickerTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/ControlExtensionTest/CCControlPotentiometerTest/CCControlPotentiometerTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/ControlExtensionTest/CCControlSliderTest/CCControlSliderTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/ControlExtensionTest/CCControlStepperTest/CCControlStepperTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/ControlExtensionTest/CCControlSwitchTest/CCControlSwitchTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocosBuilderTest/CocosBuilderTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocosBuilderTest/HelloCocosBuilder/HelloCocosBuilderLayer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocosBuilderTest/TestHeader/TestHeaderLayer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocosBuilderTest/ButtonTest/ButtonTestLayer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocosBuilderTest/MenuTest/MenuTestLayer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocosBuilderTest/AnimationsTest/AnimationsTestLayer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocosBuilderTest/TimelineCallbackTest/TimelineCallbackTestLayer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/EditBoxTest/EditBoxTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/TableViewTest/TableViewTestScene.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/TableViewTest/CustomTableViewCell.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioArmatureTest/ArmatureScene.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioActionTimelineTest/ActionTimelineTestScene.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioComponentsTest/ComponentsTestScene.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioComponentsTest/EnemyController.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioComponentsTest/GameOverScene.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioComponentsTest/PlayerController.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioComponentsTest/ProjectileController.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioComponentsTest/SceneController.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/CocoStudioGUITest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/CocosGUIScene.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/GUIEditorTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/CustomGUIScene.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/UIScene.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/UISceneManager.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/UIButtonTest/UIButtonTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/UICheckBoxTest/UICheckBoxTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/UIImageViewTest/UIImageViewTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/UILabelAtlasTest/UILabelAtlasTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/UILabelBMFontTest/UILabelBMFontTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/UILabelTest/UILabelTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/UIListViewTest/UIListViewTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/UILoadingBarTest/UILoadingBarTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/UIPageViewTest/UIPageViewTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/UILayoutTest/UILayoutTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/UIScrollViewTest/UIScrollViewTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/UISliderTest/UISliderTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/UITextFieldTest/UITextFieldTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/UIWidgetAddNodeTest/UIWidgetAddNodeTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/UIRichTextTest/UIRichTextTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/UIScene_Editor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/UISceneManager_Editor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/UIButtonTest/UIButtonTest_Editor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/UICheckBoxTest/UICheckBoxTest_Editor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/UIImageViewTest/UIImageViewTest_Editor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/UILabelAtlasTest/UILabelAtlasTest_Editor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/UILabelBMFontTest/UILabelBMFontTest_Editor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/UILabelTest/UILabelTest_Editor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/UIListViewTest/UIListViewTest_Editor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/UILoadingBarTest/UILoadingBarTest_Editor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/UIPageViewTest/UIPageViewTest_Editor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/UILayoutTest/UILayoutTest_Editor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/UIScrollViewTest/UIScrollViewTest_Editor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/UISliderTest/UISliderTest_Editor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/UITextFieldTest/UITextFieldTest_Editor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/UIWidgetAddNodeTest/UIWidgetAddNodeTest_Editor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/CustomWidget/CustomImageView.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/CustomWidget/CustomImageViewReader.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/CustomWidget/CustomReader.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/CustomTest/CustomImageTest/CustomImageTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/CustomWidget/CustomParticleWidget.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/CustomWidget/CustomParticleWidgetReader.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioGUITest/CustomTest/CustomParticleWidgetTest/CustomParticleWidgetTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioSceneTest/SceneEditorTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioSceneTest/TriggerCode/acts.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest/CocoStudioSceneTest/TriggerCode/cons.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/FontTest/FontTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/IntervalTest/IntervalTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/KeypadTest/KeypadTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/LabelTest/LabelTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/LayerTest/LayerTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/NodeTest/NodeTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/TextInputTest/TextInputTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/MenuTest/MenuTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/MotionStreakTest/MotionStreakTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/MutiTouchTest/MutiTouchTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ParallaxTest/ParallaxTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ParticleTest/ParticleTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/PerformanceTest/PerformanceAllocTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/PerformanceTest/PerformanceNodeChildrenTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/PerformanceTest/PerformanceParticleTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/PerformanceTest/PerformanceSpriteTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/PerformanceTest/PerformanceTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/PerformanceTest/PerformanceTextureTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/PerformanceTest/PerformanceTouchesTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/RenderTextureTest/RenderTextureTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/RotateWorldTest/RotateWorldTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/SceneTest/SceneTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/SchedulerTest/SchedulerTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ShaderTest/ShaderTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/SpineTest/SpineTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/SpriteTest/SpriteTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/TextureCacheTest/TextureCacheTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/Texture2dTest/Texture2dTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/TexturePackerEncryptionTest/TextureAtlasEncryptionTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/TileMapTest/TileMapTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/TouchesTest/Ball.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/TouchesTest/Paddle.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/TouchesTest/TouchesTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/TransitionsTest/TransitionsTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/UserDefaultTest/UserDefaultTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ZwoptexTest/ZwoptexTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/FileUtilsTest/FileUtilsTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/DataVisitorTest/DataVisitorTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ConfigurationTest/ConfigurationTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/controller.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/testBasic.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/AppDelegate.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/VisibleRect.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

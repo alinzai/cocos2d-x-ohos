@@ -1,0 +1,187 @@
+{
+  "version": "1.0",
+  "workerIdList": [
+    -1,
+    0
+  ],
+  "metrics": [
+    {
+      "type": "build_line",
+      "endTime": 1676463296790,
+      "status": "closed",
+      "children": [],
+      "name": "overallTime",
+      "taskName": "default@PreBuild",
+      "taskPath": "entry",
+      "workerId": -1,
+      "startTime": 1676463296786
+    },
+    {
+      "type": "build_line",
+      "endTime": 1676463296801,
+      "status": "closed",
+      "children": [],
+      "name": "overallTime",
+      "taskName": "default@MergeProfile",
+      "taskPath": "entry",
+      "workerId": -1,
+      "startTime": 1676463296799
+    },
+    {
+      "type": "build_line",
+      "endTime": 1676463296802,
+      "status": "closed",
+      "children": [],
+      "name": "overallTime",
+      "taskName": "default@GenerateLoaderJson",
+      "taskPath": "entry",
+      "workerId": -1,
+      "startTime": 1676463296801
+    },
+    {
+      "type": "build_line",
+      "endTime": 1676463296804,
+      "status": "closed",
+      "children": [],
+      "name": "overallTime",
+      "taskName": "default@MakePackInfo",
+      "taskPath": "entry",
+      "workerId": -1,
+      "startTime": 1676463296802
+    },
+    {
+      "type": "build_line",
+      "endTime": 1676463296807,
+      "status": "closed",
+      "children": [],
+      "name": "overallTime",
+      "taskName": "default@ProcessProfile",
+      "taskPath": "entry",
+      "workerId": -1,
+      "startTime": 1676463296805
+    },
+    {
+      "type": "build_line",
+      "endTime": 1676463296810,
+      "status": "closed",
+      "children": [],
+      "name": "overallTime",
+      "taskName": "default@ProcessResource",
+      "taskPath": "entry",
+      "workerId": -1,
+      "startTime": 1676463296807
+    },
+    {
+      "type": "build_line",
+      "endTime": 1676463297003,
+      "status": "closed",
+      "children": [],
+      "name": "overallTime",
+      "taskName": "default@CompileResource",
+      "taskPath": "entry",
+      "workerId": -1,
+      "startTime": 1676463296813
+    },
+    {
+      "type": "build_line",
+      "endTime": 1676463297010,
+      "status": "closed",
+      "children": [],
+      "name": "overallTime",
+      "taskName": "default@CompileArkTS",
+      "taskPath": "entry",
+      "workerId": -1,
+      "startTime": 1676463297003
+    },
+    {
+      "type": "build_line",
+      "endTime": 1676463297015,
+      "status": "closed",
+      "children": [],
+      "name": "overallTime",
+      "taskName": "default@CompileJS",
+      "taskPath": "entry",
+      "workerId": -1,
+      "startTime": 1676463297013
+    },
+    {
+      "type": "build_line",
+      "endTime": 1676463297497,
+      "status": "closed",
+      "children": [],
+      "name": "overallTime",
+      "taskName": "default@BuildNativeWithCmake",
+      "taskPath": "entry",
+      "workerId": 0,
+      "startTime": 1676463296799
+    },
+    {
+      "type": "default",
+      "endTime": 1676463297497,
+      "status": "closed",
+      "children": [
+        {
+          "type": "build_line",
+          "endTime": 1676463297497,
+          "status": "closed",
+          "children": [],
+          "name": "overallTime",
+          "taskName": "default@BuildNativeWithCmake",
+          "taskPath": "entry",
+          "workerId": 0,
+          "startTime": 1676463296799
+        }
+      ],
+      "name": "overallTime",
+      "taskName": "default@BuildNativeWithCmake",
+      "taskPath": "entry",
+      "workerId": -1,
+      "startTime": 1676463296795
+    },
+    {
+      "type": "build_line",
+      "endTime": 1676463297983,
+      "status": "closed",
+      "children": [],
+      "name": "overallTime",
+      "taskName": "default@BuildNativeWithNinja",
+      "taskPath": "entry",
+      "workerId": 0,
+      "startTime": 1676463297544
+    },
+    {
+      "type": "default",
+      "endTime": 1676463297983,
+      "status": "closed",
+      "children": [
+        {
+          "type": "build_line",
+          "endTime": 1676463297983,
+          "status": "closed",
+          "children": [],
+          "name": "overallTime",
+          "taskName": "default@BuildNativeWithNinja",
+          "taskPath": "entry",
+          "workerId": 0,
+          "startTime": 1676463297544
+        }
+      ],
+      "name": "overallTime",
+      "taskName": "default@BuildNativeWithNinja",
+      "taskPath": "entry",
+      "workerId": -1,
+      "startTime": 1676463297498
+    }
+  ],
+  "workLog": [
+    {
+      "type": "work",
+      "time": "[2023-02-15T20:14:57.961]",
+      "workerId": 0,
+      "content": "[2023-02-15T20:14:57.961] > hvigor \u001b[91mERROR: ninja: Entering directory `D:\\work\\cocos2d-x-ohos\\samples\\Cpp\\TestCpp\\proj.ohos\\entry\\.cxx\\default\\default\\arm64-v8a'\r\n[1/2] Linking CXX shared library D:\\work\\cocos2d-x-ohos\\samples\\Cpp\\TestCpp\\proj.ohos\\entry\\build\\default\\intermediates\\cmake\\default\\obj\\arm64-v8a\\libtestcpp_common.so\r\nFAILED: D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/proj.ohos/entry/build/default/intermediates/cmake/default/obj/arm64-v8a/libtestcpp_common.so \r\ncmd.exe /C \"cd . && C:\\Users\\55059\\AppData\\Local\\OpenHarmony\\Sdk\\9\\native\\llvm\\bin\\clang++.exe --target=aarch64-linux-ohos --gcc-toolchain=C:/Users/55059/AppData/Local/OpenHarmony/Sdk/9/native/llvm --sysroot=C:/Users/55059/AppData/Local/OpenHarmony/Sdk/9/native/sysroot -fPIC -g -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -D__MUSL__  --rtlib=compiler-rt -fuse-ld=lld -Wl,--build-id=sha1 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -lunwind -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -shared -Wl,-soname,libtestcpp_common.so -o D:\\work\\cocos2d-x-ohos\\samples\\Cpp\\TestCpp\\proj.ohos\\entry\\build\\default\\intermediates\\cmake\\default\\obj\\arm64-v8a\\libtestcpp_common.so @CMakeFiles\\testcpp_common.rsp  && cd .\"\r\nld.lld: error: relocation R_AARCH64_ADR_PREL_PG_HI21 cannot be used against symbol ssl_cipher_ptr_id_cmp; recompile with -fPIC\r\n>>> defined in D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/lib\\libssl.a(ssl_lib.o)\r\n>>> referenced by s2_clnt.c\r\n>>>               s2_clnt.o:(ssl2_connect) in archive D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/lib\\libssl.a\r\n\r\nld.lld: error: can't create dynamic relocation R_AARCH64_ADD_ABS_LO12_NC against symbol: ssl_cipher_ptr_id_cmp in readonly segment; recompile object files with -fPIC or pass '-Wl,-z,notext' to allow text relocations in the output\r\n>>> defined in D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/lib\\libssl.a(ssl_lib.o)\r\n>>> referenced by s2_clnt.c\r\n>>>               s2_clnt.o:(ssl2_connect) in archive D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/lib\\libssl.a\r\n\r\nld.lld: error: relocation R_AARCH64_ADR_PREL_PG_HI21 cannot be used against symbol ssl2_connect; recompile with -fPIC\r\n>>> defined in D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/lib\\libssl.a(s2_clnt.o)\r\n>>> referenced by s2_clnt.c\r\n>>>               s2_clnt.o:(ssl2_connect) in archive D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/lib\\libssl.a\r\n\r\nld.lld: error: can't create dynamic relocation R_AARCH64_ADD_ABS_LO12_NC against symbol: ssl2_connect in readonly segment; recompile object files with -fPIC or pass '-Wl,-z,notext' to allow text relocations in the output\r\n>>> defined in D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/lib\\libssl.a(s2_clnt.o)\r\n>>> referenced by s2_clnt.c\r\n>>>               s2_clnt.o:(ssl2_connect) in archive D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/lib\\libssl.a\r\n\r\nld.lld: error: can't create dynamic relocation R_AARCH64_ABS64 against symbol: ssl2_new in readonly segment; recompile object files with -fPIC or pass '-Wl,-z,notext' to allow text relocations in the output\r\n>>> defined in D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/lib\\libssl.a(s2_lib.o)\r\n>>> referenced by s2_clnt.c\r\n>>>               s2_clnt.o:(SSLv2_client_method_data.0) in archive D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/lib\\libssl.a\r\n\r\nld.lld: error: can't create dynamic relocation R_AARCH64_ABS64 against symbol: ssl2_clear in readonly segment; recompile object files with -fPIC or pass '-Wl,-z,notext' to allow text relocations in the output\r\n>>> defined in D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/lib\\libssl.a(s2_lib.o)\r\n>>> referenced by s2_clnt.c\r\n>>>               s2_clnt.o:(SSLv2_client_method_data.0) in archive D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/lib\\libssl.a\r\n\r\nld.lld: error: can't create dynamic relocation R_AARCH64_ABS64 against symbol: ssl2_free in readonly segment; recompile object files with -fPIC or pass '-Wl,-z,notext' to allow text relocations in the output\r\n>>> defined in D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/lib\\libssl.a(s2_lib.o)\r\n>>> referenced by s2_clnt.c\r\n>>>               s2_clnt.o:(SSLv2_client_method_data.0) in archive D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/lib\\libssl.a\r\n\r\nld.lld: error: can't create dynamic relocation R_AARCH64_ABS64 against symbol: ssl_undefined_function in readonly segment; recompile object files with -fPIC or pass '-Wl,-z,notext' to allow text relocations in the output\r\n>>> defined in D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/lib\\libssl.a(ssl_lib.o)\r\n>>> referenced by s2_clnt.c\r\n>>>               s2_clnt.o:(SSLv2_client_method_data.0) in archive D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/lib\\libssl.a\r\n\r\nld.lld: error: can't create dynamic relocation R_AARCH64_ABS64 against symbol: ssl2_connect in readonly segment; recompile object files with -fPIC or pass '-Wl,-z,notext' to allow text relocations in the output\r\n>>> defined in D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/lib\\libssl.a(s2_clnt.o)\r\n>>> referenced by s2_clnt.c\r\n>>>               s2_clnt.o:(SSLv2_client_method_data.0) in archive D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/lib\\libssl.a\r\n\r\nld.lld: error: can't create dynamic relocation R_AARCH64_ABS64 against symbol: ssl2_read in readonly segment; recompile object files with -fPIC or pass '-Wl,-z,notext' to allow text relocations in the output\r\n>>> defined in D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/lib\\libssl.a(s2_pkt.o)\r\n>>> referenced by s2_clnt.c\r\n>>>               s2_clnt.o:(SSLv2_client_method_data.0) in archive D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/lib\\libssl.a\r\n\r\nld.lld: error: can't create dynamic relocation R_AARCH64_ABS64 against symbol: ssl2_peek in readonly segment; recompile object files with -fPIC or pass '-Wl,-z,notext' to allow text relocations in the output\r\n>>> defined in D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/lib\\libssl.a(s2_pkt.o)\r\n>>> referenced by s2_clnt.c\r\n>>>               s2_clnt.o:(SSLv2_client_method_data.0) in archive D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/lib\\libssl.a\r\n\r\nld.lld: error: can't create dynamic relocation R_AARCH64_ABS64 against symbol: ssl2_write in readonly segment; recompile object files with -fPIC or pass '-Wl,-z,notext' to allow text relocations in the output\r\n>>> defined in D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/lib\\libssl.a(s2_pkt.o)\r\n>>> referenced by s2_clnt.c\r\n>>>               s2_clnt.o:(SSLv2_client_method_data.0) in archive D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/lib\\libssl.a\r\n\r\nld.lld: error: can't create dynamic relocation R_AARCH64_ABS64 against symbol: ssl2_shutdown in readonly segment; recompile object files with -fPIC or pass '-Wl,-z,notext' to allow text relocations in the output\r\n>>> defined in D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/lib\\libssl.a(s2_lib.o)\r\n>>> referenced by s2_clnt.c\r\n>>>               s2_clnt.o:(SSLv2_client_method_data.0) in archive D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/lib\\libssl.a\r\n\r\nld.lld: error: can't create dynamic relocation R_AARCH64_ABS64 against symbol: ssl_ok in readonly segment; recompile object files with -fPIC or pass '-Wl,-z,notext' to allow text relocations in the output\r\n>>> defined in D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/lib\\libssl.a(ssl_lib.o)\r\n>>> referenced by s2_clnt.c\r\n>>>               s2_clnt.o:(SSLv2_client_method_data.0) in archive D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/lib\\libssl.a\r\n\r\nld.lld: error: can't create dynamic relocation R_AARCH64_ABS64 against symbol: ssl_ok in readonly segment; recompile object files with -fPIC or pass '-Wl,-z,notext' to allow text relocations in the output\r\n>>> defined in D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/lib\\libssl.a(ssl_lib.o)\r\n>>> referenced by s2_clnt.c\r\n>>>               s2_clnt.o:(SSLv2_client_method_data.0) in archive D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/lib\\libssl.a\r\n\r\nld.lld: error: can't create dynamic relocation R_AARCH64_ABS64 against symbol: ssl2_ctrl in readonly segment; recompile object files with -fPIC or pass '-Wl,-z,notext' to allow text relocations in the output\r\n>>> defined in D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/lib\\libssl.a(s2_lib.o)\r\n>>> referenced by s2_clnt.c\r\n>>>               s2_clnt.o:(SSLv2_client_method_data.0) in archive D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/lib\\libssl.a\r\n\r\nld.lld: error: can't create dynamic relocation R_AARCH64_ABS64 against symbol: ssl2_ctx_ctrl in readonly segment; recompile object files with -fPIC or pass '-Wl,-z,notext' to allow text relocations in the output\r\n>>> defined in D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/lib\\libssl.a(s2_lib.o)\r\n>>> referenced by s2_clnt.c\r\n>>>               s2_clnt.o:(SSLv2_client_method_data.0) in archive D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/lib\\libssl.a\r\n\r\nld.lld: error: can't create dynamic relocation R_AARCH64_ABS64 against symbol: ssl2_get_cipher_by_char in readonly segment; recompile object files with -fPIC or pass '-Wl,-z,notext' to allow text relocations in the output\r\n>>> defined in D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/lib\\libssl.a(s2_lib.o)\r\n>>> referenced by s2_clnt.c\r\n>>>               s2_clnt.o:(SSLv2_client_method_data.0) in archive D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/lib\\libssl.a\r\n\r\nld.lld: error: can't create dynamic relocation R_AARCH64_ABS64 against symbol: ssl2_put_cipher_by_char in readonly segment; recompile object files with -fPIC or pass '-Wl,-z,notext' to allow text relocations in the output\r\n>>> defined in D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/lib\\libssl.a(s2_lib.o)\r\n>>> referenced by s2_clnt.c\r\n>>>               s2_clnt.o:(SSLv2_client_method_data.0) in archive D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/lib\\libssl.a\r\n\r\nld.lld: error: can't create dynamic relocation R_AARCH64_ABS64 against symbol: ssl2_pending in readonly segment; recompile object files with -fPIC or pass '-Wl,-z,notext' to allow text relocations in the output\r\n>>> defined in D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/lib\\libssl.a(s2_lib.o)\r\n>>> referenced by s2_clnt.c\r\n>>>               s2_clnt.o:(SSLv2_client_method_data.0) in archive D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/lib\\libssl.a\r\n\r\nld.lld: error: too many errors emitted, stopping now (use -error-limit=0 to see all errors)\r\nclang++: error: linker command failed with exit code 1 (use -v to see invocation)\r\nninja: build stopped: subcommand failed.\u001b[39m\n",
+      "taskPath": "entry",
+      "taskName": "default@BuildNativeWithNinja",
+      "taskCompletePath": "entry:default@BuildNativeWithNinja"
+    }
+  ]
+}

@@ -1,0 +1,433 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "testcpp/extensionsOut.bin/cocosdenshion/libcocosdenshion.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries",
+			"add_compile_options",
+			"target_compile_options",
+			"add_definitions",
+			"target_compile_definitions",
+			"include_directories",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"D:/work/cocos2d-x-ohos/CocosDenshion/ohos/CMakeLists.txt",
+			"D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 15,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 36,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 200,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 28,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 187,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 186,
+				"parent" : 3
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 27,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 7,
+				"parent" : 3
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 189,
+				"parent" : 3
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 17,
+				"parent" : 0
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 29,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -D__MUSL__ -fPIC  "
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-DUSE_FILE32API"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-overloaded-virtual"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-unused-function"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-unused-private-field"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-unused-variable"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-header-hygiene"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-reorder-ctor"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-unsequenced"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-extra"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-c++11-narrowing"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-format"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-return-stack-address"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-macro-redefined"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-implicit-const-int-float-conversion"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-missing-field-initializers"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-misleading-indentation"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-sign-compare"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-void-pointer-to-int-cast"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-unused-command-line-argument"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-unknown-warning-option"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-psabi"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-absolute-value"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-ignored-qualifiers"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-fPIC"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-W"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-DPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 6,
+					"define" : "COCOS2D_DEBUG=3"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "HAVE_CONFIG_H"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "OpenHarmony"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "OpenHarmony=1"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "USE_FILE32API"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 9,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/include"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../external"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../external/lib"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../external/Box2D"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../../curl"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../CocosDenshion/include"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../external/chipmunk/include/chipmunk"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../external/tiff_4_0_3"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../external/tiff_4_0_3/libtiff"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../cocos2dx"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../CocosDenshion/proj.ohos"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../external/chipmunk"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../extensions/proj.ohos"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../extensions"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../Cpp/TestCpp/Classes"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "D:/work/cocos2d-x-ohos/CocosDenshion/ohos/../include"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "D:/work/cocos2d-x-ohos/CocosDenshion/ohos/../../cocos2dx"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "D:/work/cocos2d-x-ohos/CocosDenshion/ohos/../../cocos2dx/include"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "D:/work/cocos2d-x-ohos/CocosDenshion/ohos/../../cocos2dx/kazmath/include"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "D:/work/cocos2d-x-ohos/CocosDenshion/ohos/../../cocos2dx/platform/ohos"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "D:/work/cocos2d-x-ohos/CocosDenshion/ohos/../../external/opengles/api"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/kazmath/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/../external/opengles/api"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos/napi/modules"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos/napi/common"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos/napi"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos/napi/render"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			],
+			"sysroot" : 
+			{
+				"path" : "C:/Users/55059/AppData/Local/OpenHarmony/Sdk/9/native/sysroot"
+			}
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "cocos2dx_static::@c5d3e5ea7e9c757c6a75"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "libtiff::@1791caf199f667c9b3f9"
+		}
+	],
+	"id" : "cocosdenshion::@b74a0aac62649ade2ede",
+	"name" : "cocosdenshion",
+	"nameOnDisk" : "libcocosdenshion.a",
+	"paths" : 
+	{
+		"build" : "testcpp/extensionsOut.bin/cocosdenshion",
+		"source" : "D:/work/cocos2d-x-ohos/CocosDenshion/ohos"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/CocosDenshion/ohos/SimpleAudioEngine.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

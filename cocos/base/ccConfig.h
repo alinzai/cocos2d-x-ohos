@@ -162,7 +162,7 @@ THE SOFTWARE.
  * If a device doesn't support VAO though it claims to support should add exceptions list here.
  */
 #ifndef CC_TEXTURE_ATLAS_USE_VAO
-#define CC_TEXTURE_ATLAS_USE_VAO 1
+#define CC_TEXTURE_ATLAS_USE_VAO 0 // TBD need fixed 
 #endif
 
 
@@ -271,7 +271,7 @@ THE SOFTWARE.
 
 /** Use 3d physics integration API. */
 #ifndef CC_USE_3D_PHYSICS
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS || CC_TARGET_PLATFORM == CC_PLATFORM_MAC || CC_TARGET_PLATFORM == CC_PLATFORM_WIN32 || CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID || CC_TARGET_PLATFORM == CC_PLATFORM_LINUX /*|| CC_TARGET_PLATFORM == CC_PLATFORM_WINRT*/)
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS || CC_TARGET_PLATFORM == CC_PLATFORM_MAC || CC_TARGET_PLATFORM == CC_PLATFORM_WIN32 || CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID || CC_TARGET_PLATFORM == CC_PLATFORM_OHOS || CC_TARGET_PLATFORM == CC_PLATFORM_LINUX /*|| CC_TARGET_PLATFORM == CC_PLATFORM_WINRT*/)
 #define CC_USE_3D_PHYSICS 1
 #endif
 #endif
@@ -308,7 +308,7 @@ THE SOFTWARE.
 /** Support TIFF or not. If your application don't use TIFF format picture, you can undefine this macro to save package size.
  */
 #ifndef CC_USE_TIFF
-#define CC_USE_TIFF  1
+#define CC_USE_TIFF  0 // TBD need fixed
 #endif // CC_USE_TIFF
 
 /** Support webp or not. If your application don't use webp format picture, you can undefine this macro to save package size.

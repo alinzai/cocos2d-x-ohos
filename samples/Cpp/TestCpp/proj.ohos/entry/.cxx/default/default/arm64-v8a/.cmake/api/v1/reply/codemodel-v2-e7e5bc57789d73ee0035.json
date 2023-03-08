@@ -1,0 +1,328 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.6.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "testcpp",
+					"childIndexes" : 
+					[
+						2,
+						6
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"build" : "testcpp/extensionsOut.bin",
+					"childIndexes" : 
+					[
+						3,
+						4,
+						5
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4.1"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "D:/work/cocos2d-x-ohos/extensions",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "testcpp/extensionsOut.bin/Box2D",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 3,
+					"source" : "D:/work/cocos2d-x-ohos/external/Box2D",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "testcpp/extensionsOut.bin/chipmunk",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 4,
+					"source" : "D:/work/cocos2d-x-ohos/external/chipmunk",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "testcpp/extensionsOut.bin/cocosdenshion",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 5,
+					"source" : "D:/work/cocos2d-x-ohos/CocosDenshion/ohos",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "testcpp/cocosOut.bin",
+					"childIndexes" : 
+					[
+						7
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4.1"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 6,
+					"source" : "D:/work/cocos2d-x-ohos/cocos2dx",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "testcpp/cocosOut.bin/libtiff",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4.1"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 7,
+					"source" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3",
+					"targetIndexes" : 
+					[
+						5
+					]
+				}
+			],
+			"name" : "normal",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "nativerender",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						2,
+						6
+					],
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "testcpp_common",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						3,
+						4,
+						5
+					],
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "extensions",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "box2d",
+					"parentIndex" : 2,
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "chipmunk",
+					"parentIndex" : 2,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "cocosdenshion",
+					"parentIndex" : 2,
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						7
+					],
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "cocos2dx_static",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						7
+					],
+					"name" : "libtiff",
+					"parentIndex" : 6,
+					"targetIndexes" : 
+					[
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 3,
+					"id" : "box2d::@d0095c43d16aa4f10df4",
+					"jsonFile" : "target-box2d-normal-c596961379097314b7ea.json",
+					"name" : "box2d",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "chipmunk::@bf95cc8a948caeaf7507",
+					"jsonFile" : "target-chipmunk-normal-1f345a8bd6412116a54a.json",
+					"name" : "chipmunk",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "cocos2dx_static::@c5d3e5ea7e9c757c6a75",
+					"jsonFile" : "target-cocos2dx_static-normal-d24d9764ffec03331dfa.json",
+					"name" : "cocos2dx_static",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "cocosdenshion::@b74a0aac62649ade2ede",
+					"jsonFile" : "target-cocosdenshion-normal-c6b2bab6b4b50b6a8f69.json",
+					"name" : "cocosdenshion",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "extensions::@e5419ac090c7b84f1539",
+					"jsonFile" : "target-extensions-normal-91a152f8d107bedfbe24.json",
+					"name" : "extensions",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "libtiff::@1791caf199f667c9b3f9",
+					"jsonFile" : "target-libtiff-normal-6ec715923e8be692e1a8.json",
+					"name" : "libtiff",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nativerender::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nativerender-normal-c7eed6390db84c89d5ee.json",
+					"name" : "nativerender",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "testcpp_common::@1faedec05809330fb696",
+					"jsonFile" : "target-testcpp_common-normal-ca75156aba3df247bea4.json",
+					"name" : "testcpp_common",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/proj.ohos/entry/.cxx/default/default/arm64-v8a",
+		"source" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/proj.ohos/entry/src/main/cpp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

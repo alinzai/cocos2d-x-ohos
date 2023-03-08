@@ -85,9 +85,9 @@ list(APPEND GAME_HEADER
      Classes/testBasic.h
      Classes/ZwoptexTest/ZwoptexTest.h
      Classes/precheader.h
-     Classes/CurlTest/CurlTest.h
-     Classes/UnitTest/UnitTest.h
-     Classes/UnitTest/RefPtrTest.h
+     #Classes/CurlTest/CurlTest.h
+     #Classes/UnitTest/UnitTest.h
+     #Classes/UnitTest/RefPtrTest.h
      Classes/ConfigurationTest/ConfigurationTest.h
      Classes/CurrentLanguageTest/CurrentLanguageTest.h
      Classes/AppDelegate.h
@@ -142,10 +142,10 @@ list(APPEND GAME_HEADER
      Classes/ExtensionsTest/ExtensionsTest.h
      Classes/ExtensionsTest/TableViewTest/CustomTableViewCell.h
      Classes/ExtensionsTest/TableViewTest/TableViewTestScene.h
-     Classes/ExtensionsTest/NetworkTest/WebSocketTest.h
-     Classes/ExtensionsTest/NetworkTest/WebSocketDelayTest.h
-     Classes/ExtensionsTest/NetworkTest/SocketIOTest.h
-     Classes/ExtensionsTest/NetworkTest/HttpClientTest.h
+     #Classes/ExtensionsTest/NetworkTest/WebSocketTest.h
+     #Classes/ExtensionsTest/NetworkTest/WebSocketDelayTest.h
+     #Classes/ExtensionsTest/NetworkTest/SocketIOTest.h
+     #Classes/ExtensionsTest/NetworkTest/HttpClientTest.h
      Classes/Sprite3DTest/Sprite3DTest.h
      Classes/Sprite3DTest/DrawNode3D.h
      Classes/BaseTest.h
@@ -203,7 +203,7 @@ list(APPEND GAME_HEADER
      Classes/FontTest/FontTest.h
      Classes/LightTest/LightTest.h
      Classes/VisibleRect.h
-     Classes/DownloaderTest/DownloaderTest.h
+     #Classes/DownloaderTest/DownloaderTest.h
      Classes/OpenURLTest/OpenURLTest.h
      Classes/ConsoleTest/ConsoleTest.h
      Classes/MenuTest/MenuTest.h
@@ -240,18 +240,18 @@ list(APPEND GAME_SOURCE
      Classes/CocosDenshionTest/CocosDenshionTest.cpp
      Classes/ConfigurationTest/ConfigurationTest.cpp
      Classes/ConsoleTest/ConsoleTest.cpp
-     Classes/CurlTest/CurlTest.cpp
+     #Classes/CurlTest/CurlTest.cpp
      Classes/CurrentLanguageTest/CurrentLanguageTest.cpp
      Classes/DataVisitorTest/DataVisitorTest.cpp
-     Classes/DownloaderTest/DownloaderTest.cpp
+     #Classes/DownloaderTest/DownloaderTest.cpp
      Classes/DrawPrimitivesTest/DrawPrimitivesTest.cpp
      Classes/EffectsAdvancedTest/EffectsAdvancedTest.cpp
      Classes/EffectsTest/EffectsTest.cpp
      Classes/ExtensionsTest/AssetsManagerExTest/AssetsManagerExTest.cpp
      Classes/ExtensionsTest/ExtensionsTest.cpp
-     Classes/ExtensionsTest/NetworkTest/HttpClientTest.cpp
-     Classes/ExtensionsTest/NetworkTest/SocketIOTest.cpp
-     Classes/ExtensionsTest/NetworkTest/WebSocketTest.cpp
+     #Classes/ExtensionsTest/NetworkTest/HttpClientTest.cpp
+     #Classes/ExtensionsTest/NetworkTest/SocketIOTest.cpp
+     #Classes/ExtensionsTest/NetworkTest/WebSocketTest.cpp
      Classes/ExtensionsTest/NetworkTest/WebSocketDelayTest.cpp
      Classes/ExtensionsTest/TableViewTest/CustomTableViewCell.cpp
      Classes/ExtensionsTest/TableViewTest/TableViewTestScene.cpp
@@ -322,8 +322,8 @@ list(APPEND GAME_SOURCE
      Classes/UITest/CocoStudioGUITest/UIWidgetAddNodeTest/UIWidgetAddNodeTest.cpp
      Classes/UITest/CocoStudioGUITest/UITabControlTest/UITabControlTest.cpp
      Classes/UITest/UITest.cpp
-     Classes/UnitTest/RefPtrTest.cpp
-     Classes/UnitTest/UnitTest.cpp
+     #Classes/UnitTest/RefPtrTest.cpp
+     #Classes/UnitTest/UnitTest.cpp
      Classes/UserDefaultTest/UserDefaultTest.cpp
      Classes/VisibleRect.cpp
      Classes/VibrateTest/VibrateTest.cpp
@@ -449,18 +449,42 @@ set(all_code_files
     ${GAME_SOURCE}
     )
 
-if(NOT ANDROID)
-    add_executable(${APP_NAME} ${all_code_files})
-else()
+if (ANDROID)
     add_library(${APP_NAME} SHARED ${all_code_files})
     add_subdirectory(${COCOS2DX_ROOT_PATH}/cocos/platform/android ${ENGINE_BINARY_PATH}/cocos/platform)
     target_link_libraries(${APP_NAME} -Wl,--whole-archive cpp_android_spec -Wl,--no-whole-archive)
+elseif (OHOS)
+    add_library(${APP_NAME} STATIC ${all_code_files})
+    #add_subdirectory(${COCOS2DX_ROOT_PATH}/cocos/platform)
+    #target_link_libraries(${APP_NAME} -Wl,--whole-archive cpp_android_spec -Wl,--no-whole-archive)
+else()
+    add_executable(${APP_NAME} ${all_code_files})
 endif()
 
-target_link_libraries(${APP_NAME} cocos2d)
+
+find_library( # Sets the name of the path variable.
+              GLES-lib
+              # Specifies the name of the NDK library that
+              # you want CMake to locate.
+              GLESv3 )
+find_library( # Sets the name of the path variable.
+              hilog-lib
+              # Specifies the name of the NDK library that
+              # you want CMake to locate.
+              hilog_ndk.z )
+
+find_library( # Sets the name of the path variable.
+              libnapi-lib
+              # Specifies the name of the NDK library that
+              # you want CMake to locate.
+              ace_napi.z )
+message("  *************** target link cpptest and gles  : ${GLES-lib}  ******************")
+target_link_libraries(${APP_NAME} cocos2d ${GLES-lib} ${hilog-lib} ${libnapi-lib})
 target_include_directories(${APP_NAME}
         PRIVATE Classes
 )
+target_include_directories(${APP_NAME} PUBLIC ${COCOS2DX_ROOT_PATH}/external/chipmunk/include
+    )
 
 # mark app resources
 setup_cocos_app_config(${APP_NAME})

@@ -1,0 +1,299 @@
+{
+  "D:\\work\\cocos2d-x-ohos\\samples\\Cpp\\TestCpp\\proj.ohos\\entry\\src\\main\\ets\\MainAbility\\MainAbility.ts": {
+    "mtimeMs": 1676424825716.3782,
+    "children": [
+      "D:\\work\\cocos2d-x-ohos\\samples\\Cpp\\TestCpp\\proj.ohos\\entry\\src\\main\\ets\\common\\Constants.ts"
+    ],
+    "parent": [],
+    "error": false
+  },
+  "D:\\work\\cocos2d-x-ohos\\samples\\Cpp\\TestCpp\\proj.ohos\\entry\\src\\main\\ets\\pages\\Index.ets": {
+    "mtimeMs": 1676424825717.3787,
+    "children": [
+      "D:\\work\\cocos2d-x-ohos\\samples\\Cpp\\TestCpp\\proj.ohos\\entry\\src\\main\\ets\\common\\Constants.ts",
+      "D:\\work\\cocos2d-x-ohos\\samples\\Cpp\\TestCpp\\proj.ohos\\entry\\src\\main\\ets\\workers\\WorkerManager.ets",
+      "D:\\work\\cocos2d-x-ohos\\samples\\Cpp\\TestCpp\\proj.ohos\\entry\\node_modules\\@ohos\\libcocos2dx\\src\\main\\ets\\components\\thread\\ThreadUtils.ts"
+    ],
+    "parent": [],
+    "error": false
+  },
+  "D:\\work\\cocos2d-x-ohos\\samples\\Cpp\\TestCpp\\proj.ohos\\entry\\src\\main\\ets\\workers\\CocosWorker.ts": {
+    "mtimeMs": 1676424825717.3787,
+    "children": [
+      "D:\\work\\cocos2d-x-ohos\\samples\\Cpp\\TestCpp\\proj.ohos\\entry\\src\\main\\ets\\common\\Constants.ts",
+      "D:\\work\\cocos2d-x-ohos\\samples\\Cpp\\TestCpp\\proj.ohos\\entry\\node_modules\\@ohos\\libcocos2dx\\src\\main\\ets\\components\\audio\\AudioEngine.ts",
+      "D:\\work\\cocos2d-x-ohos\\samples\\Cpp\\TestCpp\\proj.ohos\\entry\\node_modules\\@ohos\\libcocos2dx\\src\\main\\ets\\components\\dialog\\CCDialogWorkerUtils.ts"
+    ],
+    "parent": [],
+    "error": false
+  },
+  "D:\\work\\cocos2d-x-ohos\\samples\\Cpp\\TestCpp\\proj.ohos\\entry\\src\\main\\ets\\common\\Constants.ts": {
+    "mtimeMs": 1676424825716.3782,
+    "children": [],
+    "parent": [
+      "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/proj.ohos/entry/src/main/ets/MainAbility/MainAbility.ts",
+      "D:\\work\\cocos2d-x-ohos\\samples\\Cpp\\TestCpp\\proj.ohos\\entry\\src\\main\\ets\\pages\\Index.ets",
+      "D:\\work\\cocos2d-x-ohos\\samples\\Cpp\\TestCpp\\proj.ohos\\entry\\src\\main\\ets\\workers\\WorkerManager.ets",
+      "D:\\work\\cocos2d-x-ohos\\samples\\Cpp\\TestCpp\\proj.ohos\\entry\\src\\main\\ets\\workers\\CocosWorker.ts"
+    ],
+    "error": false
+  },
+  "C:\\Users\\55059\\AppData\\Local\\OpenHarmony\\Sdk\\9\\ets\\api\\@ohos.application.Ability.d.ts": {
+    "mtimeMs": 978278400000,
+    "children": [],
+    "parent": [],
+    "error": false
+  },
+  "C:\\Users\\55059\\AppData\\Local\\OpenHarmony\\Sdk\\9\\ets\\api\\application\\AbilityContext.d.ts": {
+    "mtimeMs": 978278400000,
+    "children": [],
+    "parent": [],
+    "error": false
+  },
+  "C:\\Users\\55059\\AppData\\Local\\OpenHarmony\\Sdk\\9\\ets\\api\\bundleManager\\abilityInfo.d.ts": {
+    "mtimeMs": 978278400000,
+    "children": [],
+    "parent": [],
+    "error": false
+  },
+  "C:\\Users\\55059\\AppData\\Local\\OpenHarmony\\Sdk\\9\\ets\\api\\bundleManager\\applicationInfo.d.ts": {
+    "mtimeMs": 978278400000,
+    "children": [],
+    "parent": [],
+    "error": false
+  },
+  "C:\\Users\\55059\\AppData\\Local\\OpenHarmony\\Sdk\\9\\ets\\api\\@ohos.bundle.bundleManager.d.ts": {
+    "mtimeMs": 978278400000,
+    "children": [],
+    "parent": [],
+    "error": false
+  },
+  "C:\\Users\\55059\\AppData\\Local\\OpenHarmony\\Sdk\\9\\ets\\api\\bundleManager\\hapModuleInfo.d.ts": {
+    "mtimeMs": 978278400000,
+    "children": [],
+    "parent": [],
+    "error": false
+  },
+  "C:\\Users\\55059\\AppData\\Local\\OpenHarmony\\Sdk\\9\\ets\\api\\bundleManager\\extensionAbilityInfo.d.ts": {
+    "mtimeMs": 978278400000,
+    "children": [],
+    "parent": [],
+    "error": false
+  },
+  "C:\\Users\\55059\\AppData\\Local\\OpenHarmony\\Sdk\\9\\ets\\api\\bundleManager\\bundleInfo.d.ts": {
+    "mtimeMs": 978278400000,
+    "children": [],
+    "parent": [],
+    "error": false
+  },
+  "C:\\Users\\55059\\AppData\\Local\\OpenHarmony\\Sdk\\9\\ets\\api\\ability\\abilityResult.d.ts": {
+    "mtimeMs": 978278400000,
+    "children": [],
+    "parent": [],
+    "error": false
+  },
+  "C:\\Users\\55059\\AppData\\Local\\OpenHarmony\\Sdk\\9\\ets\\api\\ability\\connectOptions.d.ts": {
+    "mtimeMs": 978278400000,
+    "children": [],
+    "parent": [],
+    "error": false
+  },
+  "C:\\Users\\55059\\AppData\\Local\\OpenHarmony\\Sdk\\9\\ets\\api\\@ohos.rpc.d.ts": {
+    "mtimeMs": 978278400000,
+    "children": [],
+    "parent": [],
+    "error": false
+  },
+  "C:\\Users\\55059\\AppData\\Local\\OpenHarmony\\Sdk\\9\\ets\\api\\application\\Context.d.ts": {
+    "mtimeMs": 978278400000,
+    "children": [],
+    "parent": [],
+    "error": false
+  },
+  "C:\\Users\\55059\\AppData\\Local\\OpenHarmony\\Sdk\\9\\ets\\api\\@ohos.resourceManager.d.ts": {
+    "mtimeMs": 978278400000,
+    "children": [],
+    "parent": [],
+    "error": false
+  },
+  "C:\\Users\\55059\\AppData\\Local\\OpenHarmony\\Sdk\\9\\ets\\api\\application\\ApplicationContext.d.ts": {
+    "mtimeMs": 978278400000,
+    "children": [],
+    "parent": [],
+    "error": false
+  },
+  "C:\\Users\\55059\\AppData\\Local\\OpenHarmony\\Sdk\\9\\ets\\api\\@ohos.app.ability.AbilityLifecycleCallback.d.ts": {
+    "mtimeMs": 978278400000,
+    "children": [],
+    "parent": [],
+    "error": false
+  },
+  "C:\\Users\\55059\\AppData\\Local\\OpenHarmony\\Sdk\\9\\ets\\api\\@ohos.app.ability.UIAbility.d.ts": {
+    "mtimeMs": 978278400000,
+    "children": [],
+    "parent": [],
+    "error": false
+  },
+  "C:\\Users\\55059\\AppData\\Local\\OpenHarmony\\Sdk\\9\\ets\\api\\@ohos.app.ability.Ability.d.ts": {
+    "mtimeMs": 978278400000,
+    "children": [],
+    "parent": [],
+    "error": false
+  },
+  "C:\\Users\\55059\\AppData\\Local\\OpenHarmony\\Sdk\\9\\ets\\api\\@ohos.app.ability.Configuration.d.ts": {
+    "mtimeMs": 978278400000,
+    "children": [],
+    "parent": [],
+    "error": false
+  },
+  "C:\\Users\\55059\\AppData\\Local\\OpenHarmony\\Sdk\\9\\ets\\api\\application\\UIAbilityContext.d.ts": {
+    "mtimeMs": 978278400000,
+    "children": [],
+    "parent": [],
+    "error": false
+  },
+  "C:\\Users\\55059\\AppData\\Local\\OpenHarmony\\Sdk\\9\\ets\\api\\@ohos.window.d.ts": {
+    "mtimeMs": 978278400000,
+    "children": [],
+    "parent": [],
+    "error": false
+  },
+  "C:\\Users\\55059\\AppData\\Local\\OpenHarmony\\Sdk\\9\\ets\\api\\@ohos.multimedia.image.d.ts": {
+    "mtimeMs": 978278400000,
+    "children": [],
+    "parent": [],
+    "error": false
+  },
+  "C:\\Users\\55059\\AppData\\Local\\OpenHarmony\\Sdk\\9\\ets\\api\\@ohos.app.ability.EnvironmentCallback.d.ts": {
+    "mtimeMs": 978278400000,
+    "children": [],
+    "parent": [],
+    "error": false
+  },
+  "C:\\Users\\55059\\AppData\\Local\\OpenHarmony\\Sdk\\9\\ets\\api\\@ohos.application.Configuration.d.ts": {
+    "mtimeMs": 978278400000,
+    "children": [],
+    "parent": [],
+    "error": false
+  },
+  "D:\\work\\cocos2d-x-ohos\\samples\\Cpp\\TestCpp\\proj.ohos\\entry\\src\\main\\ets\\workers\\WorkerManager.ets": {
+    "mtimeMs": 1676424825718.3782,
+    "children": [
+      "D:\\work\\cocos2d-x-ohos\\samples\\Cpp\\TestCpp\\proj.ohos\\entry\\src\\main\\ets\\common\\Constants.ts"
+    ],
+    "parent": [
+      "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/proj.ohos/entry/src/main/ets/pages/Index.ets"
+    ],
+    "error": false
+  },
+  "D:\\work\\cocos2d-x-ohos\\samples\\Cpp\\TestCpp\\proj.ohos\\entry\\node_modules\\@ohos\\libcocos2dx\\src\\main\\ets\\components\\thread\\ThreadUtils.ts": {
+    "mtimeMs": 1676424821345.2866,
+    "children": [
+      "D:\\work\\cocos2d-x-ohos\\samples\\Cpp\\TestCpp\\proj.ohos\\entry\\node_modules\\@ohos\\libcocos2dx\\src\\main\\ets\\components\\dialog\\DialogUtils.ts"
+    ],
+    "parent": [
+      "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/proj.ohos/entry/src/main/ets/pages/Index.ets"
+    ],
+    "error": false
+  },
+  "D:\\work\\cocos2d-x-ohos\\samples\\Cpp\\TestCpp\\proj.ohos\\entry\\node_modules\\@ohos\\libcocos2dx\\src\\main\\ets\\components\\dialog\\DialogUtils.ts": {
+    "mtimeMs": 1676424821344.2585,
+    "children": [],
+    "parent": [
+      "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/proj.ohos/entry/node_modules/@ohos/libcocos2dx/src/main/ets/components/thread/ThreadUtils.ts"
+    ],
+    "error": false
+  },
+  "D:\\work\\cocos2d-x-ohos\\samples\\Cpp\\TestCpp\\proj.ohos\\entry\\node_modules\\@ohos\\libcocos2dx\\src\\main\\ets\\components\\audio\\AudioEngine.ts": {
+    "mtimeMs": 1676424821342.9165,
+    "children": [
+      "D:\\work\\cocos2d-x-ohos\\samples\\Cpp\\TestCpp\\proj.ohos\\entry\\node_modules\\@ohos\\libcocos2dx\\src\\main\\ets\\components\\audio\\CC2dxMusic.ts",
+      "D:\\work\\cocos2d-x-ohos\\samples\\Cpp\\TestCpp\\proj.ohos\\entry\\node_modules\\@ohos\\libcocos2dx\\src\\main\\ets\\components\\audio\\CC2dxSound.ts"
+    ],
+    "parent": [
+      "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/proj.ohos/entry/src/main/ets/workers/CocosWorker.ts"
+    ],
+    "error": false
+  },
+  "D:\\work\\cocos2d-x-ohos\\samples\\Cpp\\TestCpp\\proj.ohos\\entry\\node_modules\\@ohos\\libcocos2dx\\src\\main\\ets\\components\\dialog\\CCDialogWorkerUtils.ts": {
+    "mtimeMs": 1676424821344.2585,
+    "children": [],
+    "parent": [
+      "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/proj.ohos/entry/src/main/ets/workers/CocosWorker.ts"
+    ],
+    "error": false
+  },
+  "D:\\work\\cocos2d-x-ohos\\samples\\Cpp\\TestCpp\\proj.ohos\\entry\\node_modules\\@ohos\\libcocos2dx\\src\\main\\ets\\components\\audio\\CC2dxMusic.ts": {
+    "mtimeMs": 1676424821342.9165,
+    "children": [],
+    "parent": [
+      "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/proj.ohos/entry/node_modules/@ohos/libcocos2dx/src/main/ets/components/audio/AudioEngine.ts",
+      "D:\\work\\cocos2d-x-ohos\\samples\\Cpp\\TestCpp\\proj.ohos\\entry\\node_modules\\@ohos\\libcocos2dx\\src\\main\\ets\\components\\audio\\CC2dxSound.ts"
+    ],
+    "error": false
+  },
+  "D:\\work\\cocos2d-x-ohos\\samples\\Cpp\\TestCpp\\proj.ohos\\entry\\node_modules\\@ohos\\libcocos2dx\\src\\main\\ets\\components\\audio\\CC2dxSound.ts": {
+    "mtimeMs": 1676424821344.2585,
+    "children": [
+      "D:\\work\\cocos2d-x-ohos\\samples\\Cpp\\TestCpp\\proj.ohos\\entry\\node_modules\\@ohos\\libcocos2dx\\src\\main\\ets\\components\\audio\\CC2dxMusic.ts"
+    ],
+    "parent": [
+      "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/proj.ohos/entry/node_modules/@ohos/libcocos2dx/src/main/ets/components/audio/AudioEngine.ts"
+    ],
+    "error": false
+  },
+  "C:\\Users\\55059\\AppData\\Local\\OpenHarmony\\Sdk\\9\\ets\\api\\@ohos.multimedia.media.d.ts": {
+    "mtimeMs": 978278400000,
+    "children": [],
+    "parent": [],
+    "error": false
+  },
+  "C:\\Users\\55059\\AppData\\Local\\OpenHarmony\\Sdk\\9\\ets\\api\\@ohos.multimedia.audio.d.ts": {
+    "mtimeMs": 978278400000,
+    "children": [],
+    "parent": [],
+    "error": false
+  },
+  "C:\\Users\\55059\\AppData\\Local\\OpenHarmony\\Sdk\\9\\ets\\api\\@ohos.fileio.d.ts": {
+    "mtimeMs": 978278400000,
+    "children": [],
+    "parent": [],
+    "error": false
+  },
+  "C:\\Users\\55059\\AppData\\Local\\OpenHarmony\\Sdk\\9\\ets\\build-tools\\ets-loader\\declarations\\canvas.d.ts": {
+    "mtimeMs": 978278400000,
+    "children": [],
+    "parent": [],
+    "error": false
+  },
+  "C:\\Users\\55059\\AppData\\Local\\OpenHarmony\\Sdk\\9\\ets\\build-tools\\ets-loader\\declarations\\common.d.ts": {
+    "mtimeMs": 978278400000,
+    "children": [],
+    "parent": [],
+    "error": false
+  },
+  "C:\\Users\\55059\\AppData\\Local\\OpenHarmony\\Sdk\\9\\ets\\component\\common.d.ts": {
+    "mtimeMs": 978278400000,
+    "children": [],
+    "parent": [],
+    "error": false
+  },
+  "C:\\Users\\55059\\AppData\\Local\\OpenHarmony\\Sdk\\9\\ets\\build-tools\\ets-loader\\declarations\\web.d.ts": {
+    "mtimeMs": 978278400000,
+    "children": [],
+    "parent": [],
+    "error": false
+  },
+  "C:\\Users\\55059\\AppData\\Local\\OpenHarmony\\Sdk\\9\\ets\\api\\@ohos.web.webview.d.ts": {
+    "mtimeMs": 978278400000,
+    "children": [],
+    "parent": [],
+    "error": false
+  },
+  "C:\\Users\\55059\\AppData\\Local\\OpenHarmony\\Sdk\\9\\ets\\build-tools\\ets-loader\\declarations\\matrix2d.d.ts": {
+    "mtimeMs": 978278400000,
+    "children": [],
+    "parent": [],
+    "error": false
+  }
+}

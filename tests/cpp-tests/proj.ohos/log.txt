@@ -1,0 +1,16 @@
+> hvigor [32mUP-TO-DATE :entry:default@PreBuild...  [39m
+> hvigor [32mUP-TO-DATE :entry:default@MergeProfile...  [39m
+> hvigor [32mUP-TO-DATE :entry:default@GenerateLoaderJson...  [39m
+> hvigor [32mUP-TO-DATE :entry:default@MakePackInfo...  [39m
+> hvigor [32mUP-TO-DATE :entry:default@ProcessProfile...  [39m
+> hvigor [32mFinished :entry:default@ProcessResource... after 5 ms 590 μs [39m
+> hvigor [32mFinished :entry:default@CompileResource... after 2 s 259 ms [39m
+> hvigor [32mFinished :entry:default@CompileJS... after 8 ms 322 μs [39m
+> hvigor [32mFinished :entry:default@BuildNativeWithCmake... after 2 s 392 ms [39m
+> hvigor [32mFinished :entry:default@BuildNativeWithNinja... after 12 s 74 ms [39m
+> hvigor [32mFinished :entry:default@ProcessLibs... after 1 s 201 ms [39m
+> hvigor [32mFinished :entry:default@CompileArkTS... after 13 s 397 ms [39m
+> hvigor [32mFinished :entry:default@PackageHap... after 5 s 81 ms [39m
+> hvigor [32mFinished :entry:default@SignHap... after 21 s 802 ms [39m
+> hvigor [32mFinished :entry:assembleHap... after 142 μs 900 ns [39m
+> hvigor [32mBUILD SUCCESSFUL in 44 s 258 ms [39m

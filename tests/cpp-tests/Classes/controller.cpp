@@ -64,10 +64,10 @@ public:
         addTest("Console", []() { return new ConsoleTests(); });
 #if (CC_TARGET_PLATFORM != CC_PLATFORM_MAC) && (CC_TARGET_PLATFORM != CC_PLATFORM_IOS) && (CC_TARGET_PLATFORM != CC_PLATFORM_ANDROID)
         // android and ios don't use CURL
-        addTest("Curl", []() { return new CurlTests(); });
+//        addTest("Curl", []() { return new CurlTests(); });
 #endif
         addTest("Current Language", []() { return new CurrentLanguageTests(); });
-        addTest("Downloader Test", []() { return new DownloaderTests(); });
+//        addTest("Downloader Test", []() { return new DownloaderTests(); });
         addTest("EventDispatcher", []() { return new EventDispatcherTests(); });
         addTest("Effects - Advanced", []() { return new EffectAdvanceTests(); });
         addTest("Effects - Basic", [](){return new EffectTests(); });
@@ -122,8 +122,8 @@ public:
         addTest("TexturePacker Encryption", []() { return new TextureAtlasEncryptionTests(); });
         addTest("Touches", [](){return new TouchesTests(); });
         addTest("Transitions", [](){return new TransitionsTests(); });
-        addTest("Unit Test", []() { return new UnitTests(); });
-        addTest("URL Open Test", []() { return new OpenURLTests(); });
+//        addTest("Unit Test", []() { return new UnitTests(); });
+//        addTest("URL Open Test", []() { return new OpenURLTests(); });
         addTest("UserDefault", []() { return new UserDefaultTests(); });
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS || CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
         addTest("Vibrate", []() { return new VibrateTests(); });

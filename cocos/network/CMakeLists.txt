@@ -1,4 +1,4 @@
-if(ANDROID)
+if(ANDROID) # TBD need fixed
     set(COCOS_NETWORK_HEADER
         network/CCDownloader-android.h
         )
@@ -27,8 +27,8 @@ elseif(APPLE)
 else()
     set(COCOS_NETWORK_SRC
         network/HttpClient.cpp
-        network/SocketIO.cpp
-        network/WebSocket.cpp
+        #network/SocketIO.cpp
+        #network/WebSocket.cpp
         network/CCDownloader.cpp
         network/CCDownloader-curl.cpp
         network/Uri.cpp
@@ -40,9 +40,9 @@ set(COCOS_NETWORK_HEADER
     network/CCDownloader-curl.h
     network/CCIDownloaderImpl.h
     network/CCDownloader.h
-    network/WebSocket.h
+    #network/WebSocket.h
     network/Uri.h
-    network/SocketIO.h
+    #network/SocketIO.h
     network/HttpClient.h
     network/HttpResponse.h
     network/HttpRequest.h

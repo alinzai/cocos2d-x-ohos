@@ -228,13 +228,14 @@ void TestList::tableCellTouched(TableView* table, TableViewCell* cell)
 TableViewCell* TestList::tableCellAtIndex(TableView *table, ssize_t idx)
 {
     auto cell = table->dequeueCell();
+    CCLog("cell %d, idx: %d, size:%d", cell, idx, _childTestNames.size());
     if (!cell)
     {
         cell = TableViewCell::create();
-        auto label = Label::createWithTTF(_childTestNames[idx], "fonts/arial.ttf", 20.0f);
-        label->setTag(TABEL_LABEL_TAG);
-        label->setPosition(200, 15);
-        cell->addChild(label);
+//        auto label = Label::createWithTTF(_childTestNames[idx], "fonts/arial.ttf", 20.0f);
+//        label->setTag(TABEL_LABEL_TAG);
+//        label->setPosition(200, 15);
+//        cell->addChild(label);
     }
     else
     {

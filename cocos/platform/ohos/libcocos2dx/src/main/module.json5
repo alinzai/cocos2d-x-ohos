@@ -1,0 +1,10 @@
+{
+  "module": {
+    "name": "libcocos2dx",
+    "type": "har",
+    "deviceTypes": [
+      "default",
+      "tablet"
+    ]
+  }
+}

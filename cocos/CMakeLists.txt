@@ -46,7 +46,7 @@ include(vr/CMakeLists.txt)
 include(base/CMakeLists.txt)
 include(deprecated/CMakeLists.txt)
 include(ui/CMakeLists.txt)
-include(network/CMakeLists.txt)
+#include(network/CMakeLists.txt) TBD need fixed
 include(audio/CMakeLists.txt)
 include(storage/CMakeLists.txt)
 
@@ -89,7 +89,7 @@ set(COCOS_HEADER cocos2d.h
     ${COCOS_AUDIO_HEADER}
     ${COCOS_UI_HEADER}
     ${COCOS_DEPRECATED_HEADER}
-    ${COCOS_NETWORK_HEADER}
+    #${COCOS_NETWORK_HEADER} TBD need fixed
     ${COCOS_EDITOR_SUPPORT_HEADER}
     ${COCOS_EXTENSIONS_HEADER}
     ${COCOS_STORAGE_HEADER}
@@ -109,7 +109,7 @@ set(COCOS_SRC cocos2d.cpp
     ${COCOS_AUDIO_SRC}
     ${COCOS_UI_SRC}
     ${COCOS_DEPRECATED_SRC}
-    ${COCOS_NETWORK_SRC}
+    #${COCOS_NETWORK_SRC} TBD need fixed
     ${COCOS_EDITOR_SUPPORT_SRC}
     ${COCOS_EXTENSIONS_SRC}
     ${COCOS_STORAGE_SRC}
@@ -117,11 +117,79 @@ set(COCOS_SRC cocos2d.cpp
 
 list(APPEND COCOS_SRC ${COCOS_HEADER})
 
+message("prepare to add_compile_options")
+if (OHOS)
+    message("real add_compile_options")
+    add_compile_options(-DUSE_FILE32API
+    -Wno-absolute-value
+    -Wno-extra
+    -Wno-implicit-int-float-conversion
+    -Wno-overloaded-virtual
+    -Wno-unused-function
+    -Wno-unused-private-field
+    -Wno-reorder-ctor
+    -Wno-unsequenced
+    -Wno-extra
+    -Wno-c++11-narrowing
+    -DOpenHarmony
+    )    
+endif()
+
+message("start add_library cocos2d")
 add_library(cocos2d ${COCOS_SRC})
 
 # use external libs
 add_subdirectory(${COCOS2DX_ROOT_PATH}/external ${ENGINE_BINARY_PATH}/external)
-target_link_libraries(cocos2d external)
+
+if (OHOS)
+message("****************  include opengles2")
+INCLUDE_DIRECTORIES(${ENGINE_BINARY_PATH}/external/opgngles/api)
+find_library( # Sets the name of the path variable.
+              Drawing-lib
+              # Specifies the name of the NDK library that
+              # you want CMake to locate.
+              native_drawing )
+find_library( # Sets the name of the path variable.
+              libace-lib
+              # Specifies the name of the NDK library that
+              # you want CMake to locate.
+              ace_ndk.z )
+find_library( # Sets the name of the path variable.
+              libnapi-lib
+              # Specifies the name of the NDK library that
+              # you want CMake to locate.
+              ace_napi.z )
+
+find_library( # Sets the name of the path variable.
+              GLES-lib
+              # Specifies the name of the NDK library that
+              # you want CMake to locate.
+              GLESv3 )
+find_library( # Sets the name of the path variable.
+              libuv-lib
+              # Specifies the name of the NDK library that
+              # you want CMake to locate.
+              uv )
+find_library( # Sets the name of the path variable.
+              rawfile-lib
+              # Specifies the name of the NDK library that
+              # you want CMake to locate.
+              rawfile.z )
+find_library( # Sets the name of the path variable.
+              EGL-lib
+              # Specifies the name of the NDK library that
+              # you want CMake to locate.
+              EGL )
+message("****************  native_drawing:${Drawing-lib}  *************************")
+target_link_libraries(cocos2d ${Drawing-lib} ${libace-lib} ${GLES-lib} ${libnapi-lib} ${libuv-lib} ${rawfile-lib} ${EGL-lib})
+endif()
+
+target_link_libraries(cocos2d external) # libnative_drawing.so)
+
+target_include_directories(cocos2d PUBLIC ${COCOS2DX_ROOT_PATH}/external/chipmunk/include
+    )
+
+target_compile_definitions(cocos2d PUBLIC -DOpenHarmony)
 
 # add base macro define and compile options
 use_cocos2dx_compile_define(cocos2d)

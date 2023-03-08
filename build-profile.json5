@@ -1,0 +1,40 @@
+{
+  "app": {
+    "compileSdkVersion": 9,
+    "compatibleSdkVersion": 9,
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default"
+      }
+    ],
+    "signingConfigs": [
+      {
+        "name": "default",
+        "material": {
+          "certpath": "C:\\Users\\55059\\.ohos\\config\\openharmony\\auto_ohos_default_cocos2d-x-3.17.2-XComponent_ohos.samples.etsxcomponent.cer",
+          "storePassword": "0000001AD3E13830B01455E83AC9004E669C5CA5B412D85DAAC635DD50A4AFD8C7CB2B8E81C8A3510257",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001A11BBCE295EAB1067FC48918539DB3B2E39AA1A1F20798038DC25F660EFE54DAF447189B019A1",
+          "profile": "C:\\Users\\55059\\.ohos\\config\\openharmony\\auto_ohos_default_cocos2d-x-3.17.2-XComponent_ohos.samples.etsxcomponent.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\55059\\.ohos\\config\\openharmony\\auto_ohos_default_cocos2d-x-3.17.2-XComponent_ohos.samples.etsxcomponent.p12"
+        }
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}

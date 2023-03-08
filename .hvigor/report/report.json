@@ -1,0 +1,301 @@
+{
+  "version": "1.0",
+  "workerIdList": [
+    -1,
+    1,
+    0
+  ],
+  "metrics": [
+    {
+      "type": "build_line",
+      "endTime": 1678246348600,
+      "status": "closed",
+      "children": [],
+      "name": "overallTime",
+      "taskName": "default@PreBuild",
+      "taskPath": "entry",
+      "workerId": -1,
+      "startTime": 1678246348595
+    },
+    {
+      "type": "build_line",
+      "endTime": 1678246348619,
+      "status": "closed",
+      "children": [],
+      "name": "overallTime",
+      "taskName": "default@MergeProfile",
+      "taskPath": "entry",
+      "workerId": -1,
+      "startTime": 1678246348612
+    },
+    {
+      "type": "build_line",
+      "endTime": 1678246348627,
+      "status": "closed",
+      "children": [],
+      "name": "overallTime",
+      "taskName": "default@GenerateLoaderJson",
+      "taskPath": "entry",
+      "workerId": -1,
+      "startTime": 1678246348621
+    },
+    {
+      "type": "build_line",
+      "endTime": 1678246348634,
+      "status": "closed",
+      "children": [],
+      "name": "overallTime",
+      "taskName": "default@MakePackInfo",
+      "taskPath": "entry",
+      "workerId": -1,
+      "startTime": 1678246348627
+    },
+    {
+      "type": "build_line",
+      "endTime": 1678246348796,
+      "status": "closed",
+      "children": [],
+      "name": "overallTime",
+      "taskName": "default@ProcessProfile",
+      "taskPath": "entry",
+      "workerId": -1,
+      "startTime": 1678246348636
+    },
+    {
+      "type": "build_line",
+      "endTime": 1678246348798,
+      "status": "closed",
+      "children": [],
+      "name": "overallTime",
+      "taskName": "default@ProcessResource",
+      "taskPath": "entry",
+      "workerId": -1,
+      "startTime": 1678246348796
+    },
+    {
+      "type": "build_line",
+      "endTime": 1678246349821,
+      "status": "closed",
+      "children": [],
+      "name": "overallTime",
+      "taskName": "default@CompileResource",
+      "taskPath": "entry",
+      "workerId": 1,
+      "startTime": 1678246348947
+    },
+    {
+      "type": "default",
+      "endTime": 1678246349822,
+      "status": "closed",
+      "children": [
+        {
+          "type": "build_line",
+          "endTime": 1678246349821,
+          "status": "closed",
+          "children": [],
+          "name": "overallTime",
+          "taskName": "default@CompileResource",
+          "taskPath": "entry",
+          "workerId": 1,
+          "startTime": 1678246348947
+        }
+      ],
+      "name": "overallTime",
+      "taskName": "default@CompileResource",
+      "taskPath": "entry",
+      "workerId": -1,
+      "startTime": 1678246348799
+    },
+    {
+      "type": "build_line",
+      "endTime": 1678246349845,
+      "status": "closed",
+      "children": [],
+      "name": "overallTime",
+      "taskName": "default@CompileJS",
+      "taskPath": "entry",
+      "workerId": -1,
+      "startTime": 1678246349843
+    },
+    {
+      "type": "build_line",
+      "endTime": 1678246350027,
+      "status": "closed",
+      "children": [],
+      "name": "overallTime",
+      "taskName": "default@BuildNativeWithCmake",
+      "taskPath": "entry",
+      "workerId": 0,
+      "startTime": 1678246348612
+    },
+    {
+      "type": "default",
+      "endTime": 1678246350027,
+      "status": "closed",
+      "children": [
+        {
+          "type": "build_line",
+          "endTime": 1678246350027,
+          "status": "closed",
+          "children": [],
+          "name": "overallTime",
+          "taskName": "default@BuildNativeWithCmake",
+          "taskPath": "entry",
+          "workerId": 0,
+          "startTime": 1678246348612
+        }
+      ],
+      "name": "overallTime",
+      "taskName": "default@BuildNativeWithCmake",
+      "taskPath": "entry",
+      "workerId": -1,
+      "startTime": 1678246348607
+    },
+    {
+      "type": "build_line",
+      "endTime": 1678246385478,
+      "status": "closed",
+      "children": [],
+      "name": "overallTime",
+      "taskName": "default@CompileArkTS",
+      "taskPath": "entry",
+      "workerId": 1,
+      "startTime": 1678246349843
+    },
+    {
+      "type": "default",
+      "endTime": 1678246385479,
+      "status": "closed",
+      "children": [
+        {
+          "type": "build_line",
+          "endTime": 1678246385478,
+          "status": "closed",
+          "children": [],
+          "name": "overallTime",
+          "taskName": "default@CompileArkTS",
+          "taskPath": "entry",
+          "workerId": 1,
+          "startTime": 1678246349843
+        }
+      ],
+      "name": "overallTime",
+      "taskName": "default@CompileArkTS",
+      "taskPath": "entry",
+      "workerId": -1,
+      "startTime": 1678246349822
+    },
+    {
+      "type": "build_line",
+      "endTime": 1678246907746,
+      "status": "closed",
+      "children": [],
+      "name": "overallTime",
+      "taskName": "default@BuildNativeWithNinja",
+      "taskPath": "entry",
+      "workerId": 0,
+      "startTime": 1678246350131
+    },
+    {
+      "type": "default",
+      "endTime": 1678246907746,
+      "status": "closed",
+      "children": [
+        {
+          "type": "build_line",
+          "endTime": 1678246907746,
+          "status": "closed",
+          "children": [],
+          "name": "overallTime",
+          "taskName": "default@BuildNativeWithNinja",
+          "taskPath": "entry",
+          "workerId": 0,
+          "startTime": 1678246350131
+        }
+      ],
+      "name": "overallTime",
+      "taskName": "default@BuildNativeWithNinja",
+      "taskPath": "entry",
+      "workerId": -1,
+      "startTime": 1678246350040
+    },
+    {
+      "type": "build_line",
+      "endTime": 1678246913814,
+      "status": "closed",
+      "children": [],
+      "name": "overallTime",
+      "taskName": "default@ProcessLibs",
+      "taskPath": "entry",
+      "workerId": -1,
+      "startTime": 1678246907748
+    },
+    {
+      "type": "build_line",
+      "endTime": 1678246932599,
+      "status": "closed",
+      "children": [],
+      "name": "overallTime",
+      "taskName": "default@PackageHap",
+      "taskPath": "entry",
+      "workerId": 0,
+      "startTime": 1678246916742
+    },
+    {
+      "type": "default",
+      "endTime": 1678246932599,
+      "status": "closed",
+      "children": [
+        {
+          "type": "build_line",
+          "endTime": 1678246932599,
+          "status": "closed",
+          "children": [],
+          "name": "overallTime",
+          "taskName": "default@PackageHap",
+          "taskPath": "entry",
+          "workerId": 0,
+          "startTime": 1678246916742
+        }
+      ],
+      "name": "overallTime",
+      "taskName": "default@PackageHap",
+      "taskPath": "entry",
+      "workerId": -1,
+      "startTime": 1678246916728
+    },
+    {
+      "type": "build_line",
+      "endTime": 1678246991191,
+      "status": "closed",
+      "children": [],
+      "name": "overallTime",
+      "taskName": "default@SignHap",
+      "taskPath": "entry",
+      "workerId": -1,
+      "startTime": 1678246932600
+    },
+    {
+      "type": "build_line",
+      "endTime": 1678246991193,
+      "status": "closed",
+      "children": [],
+      "name": "overallTime",
+      "taskName": "assembleHap",
+      "taskPath": "entry",
+      "workerId": -1,
+      "startTime": 1678246991192
+    }
+  ],
+  "workLog": [
+    {
+      "type": "work",
+      "time": "[2023-03-08T11:32:30.023]",
+      "workerId": 0,
+      "content": "[2023-03-08T11:32:30.023] > hvigor \u001b[33mWARN: ***************  GLES-lib: C:/Users/55059/AppData/Local/OpenHarmony/Sdk/9/native/sysroot/usr/lib/aarch64-linux-ohos/libGLESv3.so ****************\nCMAKE_SYSTEM_NAME:OHOS***\nohos use ohos/AudioEngine.cpp temporaily\n************      audio cmakelists ohos        ***********\n*************  COCOS_AUDIO_PLATFORM_SRC:audio/ohos/SimpleAudioEngine.cpp;audio/ohos/AudioEngine-inl.cpp;audio/ohos/CCThreadPool.cpp;audio/ohos/AssetFd.cpp;audio/ohos/AudioDecoder.cpp;audio/ohos/AudioDecoderProvider.cpp;audio/ohos/AudioDecoderSLES.cpp;audio/ohos/AudioDecoderOgg.cpp;audio/ohos/AudioDecoderMp3.cpp;audio/ohos/AudioDecoderWav.cpp;audio/ohos/AudioPlayerProvider.cpp;audio/ohos/AudioResampler.cpp;audio/ohos/AudioResamplerCubic.cpp;audio/ohos/PcmBufferProvider.cpp;audio/ohos/PcmAudioPlayer.cpp;audio/ohos/UrlAudioPlayer.cpp;audio/ohos/PcmData.cpp;audio/ohos/AudioMixerController.cpp;audio/ohos/AudioMixer.cpp;audio/ohos/PcmAudioService.cpp;audio/ohos/Track.cpp;audio/ohos/audio_utils/RefCounted.cpp;audio/ohos/audio_utils/Value.cpp;audio/ohos/audio_utils/minifloat.cpp;audio/ohos/audio_utils/primitives.cpp;audio/ohos/utils/Utils.cpp;audio/ohos/mp3reader.cpp;audio/ohos/tinysndfile.cpp;audio/ohos/utils/CCAudioFileUtilsOhos.cpp;audio/ohos/AudioEngine.cpp;audio/ohos/SimpleAudioEngine.cpp;audio/ohos/CCData.cpp *****************\nprepare to add_compile_options\nreal add_compile_options\nstart add_library cocos2d\nBox2D platform_spec_path:D:/work/cocos2d-x-ohos/external/Box2D/prebuilt/ohos\nstart to link libraries\n******** external cmakelists ***********\n******** ohos add pvmp3dec and tremolo ***********\n****************  include opengles2\n****************  native_drawing:C:/Users/55059/AppData/Local/OpenHarmony/Sdk/9/native/sysroot/usr/lib/aarch64-linux-ohos/libnative_drawing.so  *************************\n  *************** target link cpptest and gles  : C:/Users/55059/AppData/Local/OpenHarmony/Sdk/9/native/sysroot/usr/lib/aarch64-linux-ohos/libGLESv3.so  ******************\n***************  entry link gles  ****************\u001b[39m\n",
+      "taskPath": "entry",
+      "taskName": "default@BuildNativeWithCmake",
+      "taskCompletePath": "entry:default@BuildNativeWithCmake"
+    }
+  ]
+}

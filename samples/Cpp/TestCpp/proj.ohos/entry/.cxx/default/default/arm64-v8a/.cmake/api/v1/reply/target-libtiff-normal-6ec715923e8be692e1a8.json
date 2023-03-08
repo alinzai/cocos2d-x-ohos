@@ -1,0 +1,689 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "testcpp/cocosOut.bin/libtiff/liblibtiff.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"add_compile_options",
+			"target_compile_options",
+			"add_definitions",
+			"target_compile_definitions",
+			"include_directories",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"D:/work/cocos2d-x-ohos/external/tiff_4_0_3/CMakeLists.txt",
+			"D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/CMakeLists.txt",
+			"D:/work/cocos2d-x-ohos/cocos2dx/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 46,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 200,
+				"parent" : 2
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 2,
+				"line" : 177,
+				"parent" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 48,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 187,
+				"parent" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 47,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 186,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 7,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 189,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 168,
+				"parent" : 4
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 49,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__ -fPIC  "
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-DUSE_FILE32API"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-overloaded-virtual"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-unused-function"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-unused-private-field"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-unused-variable"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-header-hygiene"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-reorder-ctor"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-unsequenced"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-extra"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-c++11-narrowing"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-format"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-return-stack-address"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-macro-redefined"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-implicit-const-int-float-conversion"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-missing-field-initializers"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-misleading-indentation"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-sign-compare"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-void-pointer-to-int-cast"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-unused-command-line-argument"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-unknown-warning-option"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-absolute-value"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-implicit-int-float-conversion"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-DOpenHarmony"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-fPIC"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-W"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-DPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 7,
+					"define" : "COCOS2D_DEBUG=3"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "HAVE_CONFIG_H"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "OpenHarmony"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 10,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/include"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../external"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../external/lib"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../external/Box2D"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../../curl"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../CocosDenshion/include"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../external/chipmunk/include/chipmunk"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../external/tiff_4_0_3"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../external/tiff_4_0_3/libtiff"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../cocos2dx"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../CocosDenshion/proj.ohos"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../external/chipmunk"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../extensions/proj.ohos"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../extensions"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../Cpp/TestCpp/Classes"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/../external/libpng"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/../external/libjepg"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/../external/zlib"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/../external/libxml2"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/../external/libwebp-0.4.2/src/webp"
+				},
+				{
+					"backtrace" : 13,
+					"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39
+			],
+			"sysroot" : 
+			{
+				"path" : "C:/Users/55059/AppData/Local/OpenHarmony/Sdk/9/native/sysroot"
+			}
+		}
+	],
+	"id" : "libtiff::@1791caf199f667c9b3f9",
+	"name" : "libtiff",
+	"nameOnDisk" : "liblibtiff.a",
+	"paths" : 
+	{
+		"build" : "testcpp/cocosOut.bin/libtiff",
+		"source" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff/tif_aux.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff/tif_close.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff/tif_codec.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff/tif_color.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff/tif_compress.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff/tif_dir.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff/tif_dirinfo.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff/tif_dirread.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff/tif_dirwrite.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff/tif_dumpmode.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff/tif_error.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff/tif_extension.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff/tif_fax3.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff/tif_fax3sm.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff/tif_flush.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff/tif_getimage.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff/tif_jbig.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff/tif_jpeg_12.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff/tif_jpeg.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff/tif_luv.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff/tif_lzma.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff/tif_lzw.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff/tif_next.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff/tif_ojpeg.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff/tif_open.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff/tif_packbits.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff/tif_pixarlog.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff/tif_predict.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff/tif_print.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff/tif_read.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff/tif_strip.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff/tif_swab.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff/tif_thunder.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff/tif_tile.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff/tif_unix.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff/tif_version.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff/tif_warning.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff/tif_write.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff/tif_zip.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/port/dummy.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

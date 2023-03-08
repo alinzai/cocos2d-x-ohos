@@ -31,6 +31,37 @@ if(ANDROID)
         platform/android/CCFileUtils-android.cpp
         platform/android/CCEnhanceAPI-android.cpp
     )
+elseif(OHOS)
+    set(COCOS_PLATFORM_SPECIFIC_HEADER
+       platform/ohos/napi/common/plugin_common.h
+       platform/ohos/napi/plugin_manager.h
+    )
+ set(COCOS_PLATFORM_SPECIFIC_SRC
+    platform/ohos/CCDevice-ohos.cpp
+    platform/ohos/CCGLViewImpl-ohos.cpp
+    #platform/ohos/CCAccelerometer.cpp
+    platform/ohos/CCApplication-ohos.cpp
+    platform/ohos/CCCommon-ohos.cpp
+
+    platform/ohos/CCFileUtils-ohos.cpp
+    #platform/ohos/CCImage.cpp
+    platform/ohos/CCTextBitmap.cpp
+    platform/ohos/JsAudioEngine.cpp
+    platform/ohos/CCArkJsDialog.cpp
+    #platform/ohos/napi/modules/Java_org_cocos2dx_lib_Cocos2dxBitmap.cpp
+    #platform/ohos/napi/modules/Java_org_cocos2dx_lib_Cocos2dxHelper.cpp
+    platform/ohos/napi/modules/IMEJni.cpp
+    platform/ohos/napi/modules/RawFileUtils.cpp
+    platform/ohos/napi/modules/TouchesNapi.cpp
+    platform/ohos/napi/modules/DPIJni.cpp
+
+    platform/ohos/napi/render/egl_core.cpp
+    platform/ohos/napi/render/plugin_render.cpp
+    platform/ohos/napi/plugin_manager.cpp
+    platform/ohos/napi/WorkerMessageQueue.cpp
+
+    platform/ohos/napi/modules/RawFileUtils.cpp
+    )
 elseif(WINDOWS)
     set(COCOS_PLATFORM_SPECIFIC_HEADER
         platform/win32/compat/stdint.h

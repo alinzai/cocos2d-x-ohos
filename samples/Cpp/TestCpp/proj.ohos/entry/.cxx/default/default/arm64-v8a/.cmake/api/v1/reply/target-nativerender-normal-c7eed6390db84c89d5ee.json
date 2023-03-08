@@ -1,0 +1,535 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/proj.ohos/entry/build/default/intermediates/cmake/default/obj/arm64-v8a/libnativerender.so"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 59,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 61,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -D__MUSL__ -fPIC  "
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Wno-psabi"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-fPIC"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-W"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-DPIC"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Wno-sign-compare"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Wno-misleading-indentation"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Wno-missing-field-initializers"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-DCC_ENABLE_CHIPMUNK_INTEGRATION=1"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-DOpenHarmony=1"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Wno-header-hygiene"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Wno-unused-variable"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Wno-absolute-value"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Wno-extra"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Wno-overloaded-virtual"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Wno-unused-function"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Wno-unused-private-field"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Wno-reorder-ctor"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Wno-unsequenced"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Wno-unused-command-line-argument"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Wno-ignored-qualifiers"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 2,
+					"define" : "HAVE_CONFIG_H"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "OpenHarmony"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "OpenHarmony=1"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "USE_FILE32API"
+				},
+				{
+					"define" : "nativerender_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/proj.ohos/entry/src/main/cpp/../../../../../Classes"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/kazmath/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/../external/opengles/api"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos/napi/modules"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos/napi/common"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos/napi"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos/napi/render"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/extensions"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/extensions/CCBReader"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/extensions/GUI/CCControlExtension"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/extensions/GUI/CCScrollView"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/extensions/LocalStorage"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/extensions/CocoStudio/Armature"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/extensions/CocoStudio"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/extensions/../cocos2dx/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/extensions/../cocos2dx"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/extensions/../cocos2dx/platform/ohos"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/extensions/../external/opengles/api"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/extensions/../cocos2dx/kazmath/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/extensions/../external/chipmunk/include/chipmunk"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/extensions/../CocosDenshion/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/include/curl"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/external/Box2D/.."
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/external/chipmunk/include/chipmunk"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/CocosDenshion/ohos/../include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/CocosDenshion/ohos/../../cocos2dx"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/CocosDenshion/ohos/../../cocos2dx/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/CocosDenshion/ohos/../../cocos2dx/kazmath/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/CocosDenshion/ohos/../../cocos2dx/platform/ohos"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/CocosDenshion/ohos/../../external/opengles/api"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			],
+			"sysroot" : 
+			{
+				"path" : "C:/Users/55059/AppData/Local/OpenHarmony/Sdk/9/native/sysroot"
+			}
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "testcpp_common::@1faedec05809330fb696"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "extensions::@e5419ac090c7b84f1539"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "box2d::@d0095c43d16aa4f10df4"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "chipmunk::@bf95cc8a948caeaf7507"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "cocosdenshion::@b74a0aac62649ade2ede"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "cocos2dx_static::@c5d3e5ea7e9c757c6a75"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "libtiff::@1791caf199f667c9b3f9"
+		}
+	],
+	"id" : "nativerender::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "--rtlib=compiler-rt -fuse-ld=lld -Wl,--build-id=sha1 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -lunwind -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-LD:\\work\\cocos2d-x-ohos\\cocos2dx\\..\\external\\lib",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-LD:\\work\\cocos2d-x-ohos\\samples\\Cpp\\TestCpp\\..\\external\\lib",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-LD:\\work\\cocos2d-x-ohos\\extensions\\..\\cocos_thirdparty_libs\\install-linux\\aarch64\\lib",
+				"role" : "libraryPath"
+			},
+			{
+				"fragment" : "-LC:\\Users\\55059\\AppData\\Local\\OpenHarmony\\Sdk\\9\\native\\sysroot\\usr\\lib\\aarch64-linux-ohos",
+				"role" : "libraryPath"
+			},
+			{
+				"fragment" : "-LC:\\Users\\55059\\AppData\\Local\\OpenHarmony\\Sdk\\9\\native\\llvm\\lib\\clang\\12.0.1\\lib\\aarch64-linux-ohos",
+				"role" : "libraryPath"
+			},
+			{
+				"fragment" : "-Wl,-rpath,D:/work/cocos2d-x-ohos/cocos2dx/../external/lib:D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../external/lib:D:/work/cocos2d-x-ohos/extensions/../cocos_thirdparty_libs/install-linux/aarch64/lib:D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/proj.ohos/entry/build/default/intermediates/cmake/default/obj/arm64-v8a:/usr/lib/aarch64-linux-ohos",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "testcpp\\cocosOut.bin\\libcocos2dx_static.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\work\\cocos2d-x-ohos\\samples\\Cpp\\TestCpp\\proj.ohos\\entry\\build\\default\\intermediates\\cmake\\default\\obj\\arm64-v8a\\libtestcpp_common.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lace_napi.z",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lace_napi.z",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "testcpp\\extensionsOut.bin\\libextensions.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "testcpp\\extensionsOut.bin\\Box2D\\libbox2d.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "testcpp\\extensionsOut.bin\\chipmunk\\libchipmunk.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "testcpp\\extensionsOut.bin\\cocosdenshion\\libcocosdenshion.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "testcpp\\cocosOut.bin\\libcocos2dx_static.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lpng_static",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lz",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "testcpp\\cocosOut.bin\\libtiff\\liblibtiff.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lturbojpeg_static",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lEGL",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lGLESv3",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lhilog_ndk.z",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lace_ndk.z",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lace_napi.z",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-luv",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lrawfile.z",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-Wl,-Bstatic",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lc++",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-Wl,-Bdynamic",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lnative_drawing",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lcurl",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lssl",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lm",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX",
+		"sysroot" : 
+		{
+			"path" : "C:/Users/55059/AppData/Local/OpenHarmony/Sdk/9/native/sysroot"
+		}
+	},
+	"name" : "nativerender",
+	"nameOnDisk" : "libnativerender.so",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "napi_init.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

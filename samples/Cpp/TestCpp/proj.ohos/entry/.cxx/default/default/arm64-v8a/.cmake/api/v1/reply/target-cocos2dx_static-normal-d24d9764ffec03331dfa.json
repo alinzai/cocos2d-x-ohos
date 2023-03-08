@@ -1,0 +1,1811 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "testcpp/cocosOut.bin/libcocos2dx_static.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries",
+			"add_compile_options",
+			"target_compile_options",
+			"add_definitions",
+			"target_compile_definitions",
+			"include_directories",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"D:/work/cocos2d-x-ohos/cocos2dx/CMakeLists.txt",
+			"D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 191,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 194,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 200,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 197,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 187,
+				"parent" : 3
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 196,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 7,
+				"parent" : 3
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 189,
+				"parent" : 3
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 168,
+				"parent" : 0
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 195,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -D__MUSL__ -fPIC  "
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-DUSE_FILE32API"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-overloaded-virtual"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-unused-function"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-unused-private-field"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-unused-variable"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-header-hygiene"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-reorder-ctor"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-unsequenced"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-extra"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-c++11-narrowing"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-format"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-return-stack-address"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-macro-redefined"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-implicit-const-int-float-conversion"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-missing-field-initializers"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-misleading-indentation"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-sign-compare"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-void-pointer-to-int-cast"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-unused-command-line-argument"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-unknown-warning-option"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-absolute-value"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-implicit-int-float-conversion"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-DOpenHarmony"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wno-psabi"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-fPIC"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-W"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-DPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 7,
+					"define" : "COCOS2D_DEBUG=3"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "HAVE_CONFIG_H"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "OpenHarmony"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "USE_FILE32API"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 9,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/include"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../external"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../external/lib"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../external/Box2D"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../../curl"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../CocosDenshion/include"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../external/chipmunk/include/chipmunk"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../external/tiff_4_0_3"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../external/tiff_4_0_3/libtiff"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../cocos2dx"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../CocosDenshion/proj.ohos"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../external/chipmunk"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../extensions/proj.ohos"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../extensions"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../Cpp/TestCpp/Classes"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/../external/libpng"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/../external/libjepg"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/../external/zlib"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/../external/libxml2"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/../external/libwebp-0.4.2/src/webp"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/include"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/kazmath/include"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/../external/opengles/api"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos/napi/modules"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos/napi/common"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos/napi"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos/napi/render"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112,
+				113,
+				114,
+				115,
+				116,
+				117,
+				118,
+				119,
+				120,
+				121,
+				122,
+				123,
+				124,
+				125,
+				126,
+				127,
+				128,
+				129,
+				130,
+				131,
+				132,
+				133,
+				134,
+				135,
+				136,
+				137,
+				138
+			],
+			"sysroot" : 
+			{
+				"path" : "C:/Users/55059/AppData/Local/OpenHarmony/Sdk/9/native/sysroot"
+			}
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__ -fPIC  "
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-DUSE_FILE32API"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-overloaded-virtual"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-unused-function"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-unused-private-field"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-unused-variable"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-header-hygiene"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-reorder-ctor"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-unsequenced"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-extra"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-c++11-narrowing"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-format"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-return-stack-address"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-macro-redefined"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-implicit-const-int-float-conversion"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-missing-field-initializers"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-misleading-indentation"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-sign-compare"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-void-pointer-to-int-cast"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-unused-command-line-argument"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-unknown-warning-option"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-absolute-value"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-implicit-int-float-conversion"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-DOpenHarmony"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wno-psabi"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-fPIC"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-W"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-DPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 7,
+					"define" : "COCOS2D_DEBUG=3"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "HAVE_CONFIG_H"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "OpenHarmony"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "USE_FILE32API"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 9,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/include"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../external"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../external/lib"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../external/Box2D"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../../curl"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../CocosDenshion/include"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../external/chipmunk/include/chipmunk"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/Classes/ExtensionsTest"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../external/tiff_4_0_3"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../external/tiff_4_0_3/libtiff"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../cocos2dx"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../CocosDenshion/proj.ohos"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../external/chipmunk"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../extensions/proj.ohos"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../../extensions"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "D:/work/cocos2d-x-ohos/samples/Cpp/TestCpp/../../Cpp/TestCpp/Classes"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/../external/libpng"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/../external/libjepg"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/../external/zlib"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/../external/libxml2"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/../external/libwebp-0.4.2/src/webp"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/include"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/kazmath/include"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/../external/opengles/api"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos/napi/modules"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos/napi/common"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos/napi"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos/napi/render"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/work/cocos2d-x-ohos/external/tiff_4_0_3/libtiff"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				3,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48
+			],
+			"sysroot" : 
+			{
+				"path" : "C:/Users/55059/AppData/Local/OpenHarmony/Sdk/9/native/sysroot"
+			}
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "libtiff::@1791caf199f667c9b3f9"
+		}
+	],
+	"id" : "cocos2dx_static::@c5d3e5ea7e9c757c6a75",
+	"name" : "cocos2dx_static",
+	"nameOnDisk" : "libcocos2dx_static.a",
+	"paths" : 
+	{
+		"build" : "testcpp/cocosOut.bin",
+		"source" : "D:/work/cocos2d-x-ohos/cocos2dx"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112,
+				113,
+				114,
+				115,
+				116,
+				117,
+				118,
+				119,
+				120,
+				121,
+				122,
+				123,
+				124,
+				125,
+				126,
+				127,
+				128,
+				129,
+				130,
+				131,
+				132,
+				133,
+				134,
+				135,
+				136,
+				137,
+				138
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/CCConfiguration.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/CCScheduler.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/CCCamera.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/ccFPSImages.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/actions/CCAction.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/actions/CCActionCamera.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/actions/CCActionCatmullRom.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/actions/CCActionEase.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/actions/CCActionGrid.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/actions/CCActionGrid3D.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/actions/CCActionInstant.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/actions/CCActionInterval.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/actions/CCActionManager.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/actions/CCActionPageTurn3D.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/actions/CCActionProgressTimer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/actions/CCActionTiledGrid.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/actions/CCActionTween.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/base_nodes/CCAtlasNode.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/base_nodes/CCNode.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/cocoa/CCAffineTransform.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/cocoa/CCGeometry.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/cocoa/CCAutoreleasePool.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/cocoa/CCDictionary.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/cocoa/CCNS.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/cocoa/CCObject.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/cocoa/CCSet.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/cocoa/CCString.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/cocoa/CCZone.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/cocoa/CCArray.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/cocoa/CCDataVisitor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/cocos2d.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/CCDirector.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/draw_nodes/CCDrawingPrimitives.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/draw_nodes/CCDrawNode.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/effects/CCGrabber.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/effects/CCGrid.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/kazmath/src/aabb.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/kazmath/src/mat3.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/kazmath/src/mat4.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/kazmath/src/neon_matrix_impl.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/kazmath/src/plane.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/kazmath/src/quaternion.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/kazmath/src/ray2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/kazmath/src/utility.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/kazmath/src/vec2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/kazmath/src/vec3.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/kazmath/src/vec4.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/kazmath/src/GL/mat4stack.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/kazmath/src/GL/matrix.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/keypad_dispatcher/CCKeypadDelegate.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/keypad_dispatcher/CCKeypadDispatcher.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/label_nodes/CCLabelAtlas.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/label_nodes/CCLabelBMFont.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/label_nodes/CCLabelTTF.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/layers_scenes_transitions_nodes/CCLayer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/layers_scenes_transitions_nodes/CCScene.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/layers_scenes_transitions_nodes/CCTransitionPageTurn.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/layers_scenes_transitions_nodes/CCTransition.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/layers_scenes_transitions_nodes/CCTransitionProgress.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/menu_nodes/CCMenu.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/menu_nodes/CCMenuItem.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/misc_nodes/CCClippingNode.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/misc_nodes/CCMotionStreak.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/misc_nodes/CCProgressTimer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/misc_nodes/CCRenderTexture.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/particle_nodes/CCParticleExamples.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/particle_nodes/CCParticleSystem.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/particle_nodes/CCParticleBatchNode.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/particle_nodes/CCParticleSystemQuad.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/CCImageCommonWebp.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/CCSAXParser.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/CCThread.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/CCFileUtils.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/platform.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/CCEGLViewProtocol.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos/CCDevice.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos/CCEGLView.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos/CCAccelerometer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos/CCApplication.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos/CCCommon.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos/CCFileUtilsOhos.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos/CCImage.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos/CCTextBitmap.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos/JsAudioEngine.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos/CCArkJsDialog.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos/napi/modules/Java_org_cocos2dx_lib_Cocos2dxBitmap.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos/napi/modules/Java_org_cocos2dx_lib_Cocos2dxHelper.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos/napi/modules/IMEJni.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos/napi/modules/RawFileUtils.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos/napi/modules/TouchesNapi.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos/napi/modules/DPIJni.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos/napi/render/egl_core.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos/napi/render/plugin_render.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos/napi/plugin_manager.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/platform/ohos/napi/WorkerMessageQueue.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/script_support/CCScriptSupport.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/shaders/ccShaders.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/shaders/CCGLProgram.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/shaders/ccGLStateCache.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/shaders/CCShaderCache.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/sprite_nodes/CCAnimation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/sprite_nodes/CCAnimationCache.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/sprite_nodes/CCSprite.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/sprite_nodes/CCSpriteBatchNode.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/sprite_nodes/CCSpriteFrame.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/sprite_nodes/CCSpriteFrameCache.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/support/ccUTF8.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/support/CCNotificationCenter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/support/CCProfiling.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/support/CCPointExtension.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/support/TransformUtils.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/support/user_default/CCUserDefault.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/support/base64.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/support/ccUtils.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/support/CCVertex.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/support/data_support/ccCArray.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/support/image_support/TGAlib.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/support/tinyxml2/tinyxml2.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/support/zip_support/ZipUtils.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/support/zip_support/ioapi.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/support/zip_support/unzip.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/support/component/CCComponent.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/support/component/CCComponentContainer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/text_input_node/CCIMEDispatcher.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/text_input_node/CCTextFieldTTF.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/textures/CCTexture2D.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/textures/CCTextureAtlas.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/textures/CCTextureCache.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/textures/CCTextureETC.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/textures/CCTexturePVR.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/tilemap_parallax_nodes/CCParallaxNode.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/tilemap_parallax_nodes/CCTMXLayer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/tilemap_parallax_nodes/CCTMXObjectGroup.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/tilemap_parallax_nodes/CCTMXTiledMap.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/tilemap_parallax_nodes/CCTMXXMLParser.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/tilemap_parallax_nodes/CCTileMapAtlas.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/touch_dispatcher/CCTouchDispatcher.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/touch_dispatcher/CCTouchHandler.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/work/cocos2d-x-ohos/cocos2dx/touch_dispatcher/CCTouch.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

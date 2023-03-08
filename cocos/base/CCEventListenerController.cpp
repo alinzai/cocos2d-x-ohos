@@ -69,21 +69,21 @@ bool EventListenerController::init()
             {
 #if (CC_TARGET_PLATFORM != CC_PLATFORM_WINRT)
 
-                const auto&  keyStatus = evtController->_controller->_allKeyStatus[evtController->_keyCode];
-                const auto&  keyPrevStatus = evtController->_controller->_allKeyPrevStatus[evtController->_keyCode];
-
-                if (this->onKeyDown && keyStatus.isPressed && !keyPrevStatus.isPressed)
-                {
-                    this->onKeyDown(evtController->_controller, evtController->_keyCode, event);
-                }
-                else if (this->onKeyUp && !keyStatus.isPressed && keyPrevStatus.isPressed)
-                {
-                    this->onKeyUp(evtController->_controller, evtController->_keyCode, event);
-                }
-                else if (this->onKeyRepeat && keyStatus.isPressed && keyPrevStatus.isPressed)
-                {
-                    this->onKeyRepeat(evtController->_controller, evtController->_keyCode, event);
-                }
+//                const auto&  keyStatus; // TBD need fixed = evtController->_controller->_allKeyStatus[evtController->_keyCode];
+//                const auto&  keyPrevStatus; // TBD need fixed = evtController->_controller->_allKeyPrevStatus[evtController->_keyCode];
+//
+//                if (this->onKeyDown && keyStatus.isPressed && !keyPrevStatus.isPressed)
+//                {
+//                    this->onKeyDown(evtController->_controller, evtController->_keyCode, event);
+//                }
+//                else if (this->onKeyUp && !keyStatus.isPressed && keyPrevStatus.isPressed)
+//                {
+//                    this->onKeyUp(evtController->_controller, evtController->_keyCode, event);
+//                }
+//                else if (this->onKeyRepeat && keyStatus.isPressed && keyPrevStatus.isPressed)
+//                {
+//                    this->onKeyRepeat(evtController->_controller, evtController->_keyCode, event);
+//                }
 #endif
             }
             break;
