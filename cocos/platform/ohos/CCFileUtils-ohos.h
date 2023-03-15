@@ -37,6 +37,7 @@ Copyright (c) 2017-2018 Xiamen Yaji Software Co., Ltd.
 #include <unordered_map>
 #include <memory>
 
+#include "napi/modules/RawFileUtils.h"
 
 NS_CC_BEGIN
 
@@ -59,14 +60,12 @@ public:
      */
     virtual ~FileUtilsOhos();
 
-//    static void setassetmanager(AAssetManager* a);
-//    static AAssetManager* getAssetManager() { return assetmanager; }
+    static void setassetmanager(NativeResourceManager* a);
+    static NativeResourceManager* getAssetManager() { return nativeResourceManager_; }
     static ZipFile* getObbFile() { return obbfile; }
 
     /* override functions */
     bool init() override;
-
-    virtual std::string getNewFilename(const std::string &filename) const override;
 
     virtual FileUtils::Status getContents(const std::string& filename, ResizableBuffer* buffer) const override;
 
@@ -79,7 +78,7 @@ private:
     virtual bool isFileExistInternal(const std::string& strFilePath) const override;
     virtual bool isDirectoryExistInternal(const std::string& dirPath) const override;
 
-//    static AAssetManager* assetmanager;
+    static NativeResourceManager* nativeResourceManager_;
     static ZipFile* obbfile;
 };
 

@@ -62,6 +62,11 @@ if(ANDROID)
     list(APPEND GAME_SOURCE
          proj.android/app/jni/main.cpp
          )
+elseif(OHOS)
+    set(APP_NAME cpp_empty_test)
+    list(APPEND GAME_SOURCE
+        proj.ohos/entry/src/main/cpp/main.cpp
+            )
 elseif(LINUX)
     list(APPEND GAME_SOURCE
          proj.linux/main.cpp
@@ -111,18 +116,39 @@ set(all_code_files
     ${GAME_SOURCE}
     )
 
-# mark app complie info
-if(NOT ANDROID)
-    add_executable(${APP_NAME} ${all_code_files})
-else()
+if(ANDROID)
     add_library(${APP_NAME} SHARED ${all_code_files})
     add_subdirectory(${COCOS2DX_ROOT_PATH}/cocos/platform/android ${ENGINE_BINARY_PATH}/cocos/platform)
     target_link_libraries(${APP_NAME} -Wl,--whole-archive cpp_android_spec -Wl,--no-whole-archive)
+elseif(OHOS)
+    add_library(${APP_NAME} SHARED ${all_code_files})
+else()
+    add_executable(${APP_NAME} ${all_code_files})
 endif()
 
-target_link_libraries(${APP_NAME} cocos2d)
+find_library( # Sets the name of the path variable.
+              GLES-lib
+              # Specifies the name of the NDK library that
+              # you want CMake to locate.
+              GLESv3 )
+find_library( # Sets the name of the path variable.
+              hilog-lib
+              # Specifies the name of the NDK library that
+              # you want CMake to locate.
+              hilog_ndk.z )
 
-target_include_directories(${APP_NAME} PRIVATE Classes)
+find_library( # Sets the name of the path variable.
+              libnapi-lib
+              # Specifies the name of the NDK library that
+              # you want CMake to locate.
+              ace_napi.z )
+message("  *************** target link cpptest and gles  : ${GLES-lib}  ******************")
+target_link_libraries(${APP_NAME} cocos2d ${GLES-lib} ${hilog-lib} ${libnapi-lib})
+target_include_directories(${APP_NAME}
+        PRIVATE Classes
+)
+target_include_directories(${APP_NAME} PUBLIC ${COCOS2DX_ROOT_PATH}/external/chipmunk/include
+    )
 
 # mark app resources
 setup_cocos_app_config(${APP_NAME})

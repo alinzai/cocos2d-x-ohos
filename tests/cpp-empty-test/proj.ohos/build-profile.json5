@@ -1,0 +1,40 @@
+{
+  "app": {
+    "compileSdkVersion": 9,
+    "compatibleSdkVersion": 9,
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default"
+      }
+    ],
+    "signingConfigs": [
+      {
+        "name": "default",
+        "material": {
+          "certpath": "C:\\Users\\Administrator\\.ohos\\config\\openharmony\\auto_ohos_default_proj.ohos_ohos.samples.etsxcomponent.cer",
+          "storePassword": "0000001AADC5244F2C1B14FA791A15453C6149A4A4D7E7B5C349DADCEB9242D81076E0537A4721B67913",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001A0B50150670F577A89D3144E54914AE113AC870109DEC22E8D4C4F6819E6F479C5EA9A252B230",
+          "profile": "C:\\Users\\Administrator\\.ohos\\config\\openharmony\\auto_ohos_default_proj.ohos_ohos.samples.etsxcomponent.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\Administrator\\.ohos\\config\\openharmony\\auto_ohos_default_proj.ohos_ohos.samples.etsxcomponent.p12"
+        }
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
